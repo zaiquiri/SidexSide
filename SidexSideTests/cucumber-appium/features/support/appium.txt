@@ -1,0 +1,9 @@
+[caps]
+platformName = "iOS"
+deviceName = "iPhone Simulator"
+platformVersion = "7.1"
+app = "../../build/Release-iphonesimulator/SidexSide.app"
+
+[appium_lib]
+sauce_username = false 
+sauce_access_key = false 
