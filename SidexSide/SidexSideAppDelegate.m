@@ -1,18 +1,12 @@
-//
-//  SidexSideAppDelegate.m
-//  SidexSide
-//
-//  Created by zach on 8/31/14.
-//  Copyright (c) 2014 zappery. All rights reserved.
-//
-
 #import "SidexSideAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation SidexSideAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [Parse setApplicationId:@"xMsrdzqyWstkeR2tiGr0xaMNso6Qhl8lTfSJO2QS"
+                  clientKey:@"hEiLNnGFjDOu62b0cIKRqLJGgp9FjN7GyDSNLODF"];
     return YES;
 }
 							

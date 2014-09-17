@@ -21,6 +21,23 @@
 		9290C4FC19B3528A00581CB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DE19B3528A00581CB6 /* UIKit.framework */; };
 		9290C50419B3528A00581CB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9290C50219B3528A00581CB6 /* InfoPlist.strings */; };
 		9290C50619B3528A00581CB6 /* SidexSideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9290C50519B3528A00581CB6 /* SidexSideTests.m */; };
+		92D4CEA219C939B9004250A7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA019C939B9004250A7 /* Bolts.framework */; };
+		92D4CEA319C939B9004250A7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA119C939B9004250A7 /* Parse.framework */; };
+		92D4CEA519C939E4004250A7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA419C939E4004250A7 /* Accounts.framework */; };
+		92D4CEA719C939ED004250A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA619C939ED004250A7 /* AudioToolbox.framework */; };
+		92D4CEA919C939F4004250A7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA819C939F4004250A7 /* CFNetwork.framework */; };
+		92D4CEAB19C93A07004250A7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEAA19C93A07004250A7 /* CoreLocation.framework */; };
+		92D4CEAD19C93A13004250A7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEAC19C93A13004250A7 /* libz.dylib */; };
+		92D4CEAF19C93A1F004250A7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEAE19C93A1F004250A7 /* MobileCoreServices.framework */; };
+		92D4CEB119C93A28004250A7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB019C93A28004250A7 /* QuartzCore.framework */; };
+		92D4CEB319C93A32004250A7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB219C93A32004250A7 /* Security.framework */; };
+		92D4CEB519C93A3B004250A7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB419C93A3B004250A7 /* Social.framework */; };
+		92D4CEB719C93A47004250A7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB619C93A47004250A7 /* StoreKit.framework */; };
+		92D4CEB919C93A51004250A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB819C93A51004250A7 /* SystemConfiguration.framework */; };
+		92D4CEDD19C9E9ED004250A7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEDC19C9E9ED004250A7 /* libOCMock.a */; };
+		92D4CEE019C9EB87004250A7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEDE19C9EB87004250A7 /* Bolts.framework */; };
+		92D4CEE119C9EB87004250A7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEDF19C9EB87004250A7 /* Parse.framework */; };
+		92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +70,33 @@
 		9290C50119B3528A00581CB6 /* SidexSideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SidexSideTests-Info.plist"; sourceTree = "<group>"; };
 		9290C50319B3528A00581CB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9290C50519B3528A00581CB6 /* SidexSideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidexSideTests.m; sourceTree = "<group>"; };
+		92D4CEA019C939B9004250A7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		92D4CEA119C939B9004250A7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		92D4CEA419C939E4004250A7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		92D4CEA619C939ED004250A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		92D4CEA819C939F4004250A7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		92D4CEAA19C93A07004250A7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		92D4CEAC19C93A13004250A7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		92D4CEAE19C93A1F004250A7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		92D4CEB019C93A28004250A7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		92D4CEB219C93A32004250A7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		92D4CEB419C93A3B004250A7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		92D4CEB619C93A47004250A7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		92D4CEB819C93A51004250A7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		92D4CED319C9E95E004250A7 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		92D4CED419C9E95E004250A7 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		92D4CED519C9E95E004250A7 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		92D4CED619C9E95E004250A7 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		92D4CED719C9E95E004250A7 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		92D4CED819C9E95E004250A7 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		92D4CED919C9E95E004250A7 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		92D4CEDA19C9E95E004250A7 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		92D4CEDB19C9E95E004250A7 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		92D4CEDC19C9E9ED004250A7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "/Volumes/OCMock 3.1/iOS/libOCMock.a"; sourceTree = "<absolute>"; };
+		92D4CEDE19C9EB87004250A7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.3.0/Bolts.framework"; sourceTree = "<group>"; };
+		92D4CEDF19C9EB87004250A7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.3.0/Parse.framework"; sourceTree = "<group>"; };
+		92D4CEE219C9EF0B004250A7 /* SidexSideLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidexSideLoginViewController.h; sourceTree = "<group>"; };
+		92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidexSideLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +104,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D4CEB919C93A51004250A7 /* SystemConfiguration.framework in Frameworks */,
+				92D4CEB719C93A47004250A7 /* StoreKit.framework in Frameworks */,
+				92D4CEB519C93A3B004250A7 /* Social.framework in Frameworks */,
+				92D4CEB319C93A32004250A7 /* Security.framework in Frameworks */,
+				92D4CEB119C93A28004250A7 /* QuartzCore.framework in Frameworks */,
+				92D4CEAF19C93A1F004250A7 /* MobileCoreServices.framework in Frameworks */,
+				92D4CEAD19C93A13004250A7 /* libz.dylib in Frameworks */,
+				92D4CEAB19C93A07004250A7 /* CoreLocation.framework in Frameworks */,
+				92D4CEA919C939F4004250A7 /* CFNetwork.framework in Frameworks */,
+				92D4CEA719C939ED004250A7 /* AudioToolbox.framework in Frameworks */,
+				92D4CEA519C939E4004250A7 /* Accounts.framework in Frameworks */,
 				9290C4DD19B3528A00581CB6 /* CoreGraphics.framework in Frameworks */,
 				9290C4DF19B3528A00581CB6 /* UIKit.framework in Frameworks */,
 				9290C4DB19B3528A00581CB6 /* Foundation.framework in Frameworks */,
+				92D4CEA219C939B9004250A7 /* Bolts.framework in Frameworks */,
+				92D4CEA319C939B9004250A7 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +127,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D4CEDD19C9E9ED004250A7 /* libOCMock.a in Frameworks */,
+				92D4CEE019C9EB87004250A7 /* Bolts.framework in Frameworks */,
+				92D4CEE119C9EB87004250A7 /* Parse.framework in Frameworks */,
 				9290C4FA19B3528A00581CB6 /* XCTest.framework in Frameworks */,
 				9290C4FC19B3528A00581CB6 /* UIKit.framework in Frameworks */,
 				9290C4FB19B3528A00581CB6 /* Foundation.framework in Frameworks */,
@@ -82,6 +142,7 @@
 		9290C4CE19B3528A00581CB6 = {
 			isa = PBXGroup;
 			children = (
+				92D4CED119C9E95E004250A7 /* Libraries */,
 				9290C4E019B3528A00581CB6 /* SidexSide */,
 				9290C4FF19B3528A00581CB6 /* SidexSideTests */,
 				9290C4D919B3528A00581CB6 /* Frameworks */,
@@ -101,6 +162,21 @@
 		9290C4D919B3528A00581CB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92D4CEDE19C9EB87004250A7 /* Bolts.framework */,
+				92D4CEDF19C9EB87004250A7 /* Parse.framework */,
+				92D4CEB819C93A51004250A7 /* SystemConfiguration.framework */,
+				92D4CEB619C93A47004250A7 /* StoreKit.framework */,
+				92D4CEB419C93A3B004250A7 /* Social.framework */,
+				92D4CEB219C93A32004250A7 /* Security.framework */,
+				92D4CEB019C93A28004250A7 /* QuartzCore.framework */,
+				92D4CEAE19C93A1F004250A7 /* MobileCoreServices.framework */,
+				92D4CEAC19C93A13004250A7 /* libz.dylib */,
+				92D4CEAA19C93A07004250A7 /* CoreLocation.framework */,
+				92D4CEA819C939F4004250A7 /* CFNetwork.framework */,
+				92D4CEA619C939ED004250A7 /* AudioToolbox.framework */,
+				92D4CEA419C939E4004250A7 /* Accounts.framework */,
+				92D4CEA019C939B9004250A7 /* Bolts.framework */,
+				92D4CEA119C939B9004250A7 /* Parse.framework */,
 				9290C4DA19B3528A00581CB6 /* Foundation.framework */,
 				9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */,
 				9290C4DE19B3528A00581CB6 /* UIKit.framework */,
@@ -119,6 +195,8 @@
 				9290C4F019B3528A00581CB6 /* SidexSideViewController.m */,
 				9290C4F219B3528A00581CB6 /* Images.xcassets */,
 				9290C4E119B3528A00581CB6 /* Supporting Files */,
+				92D4CEE219C9EF0B004250A7 /* SidexSideLoginViewController.h */,
+				92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */,
 			);
 			path = SidexSide;
 			sourceTree = "<group>";
@@ -150,6 +228,31 @@
 				9290C50219B3528A00581CB6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92D4CED119C9E95E004250A7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				92D4CEDC19C9E9ED004250A7 /* libOCMock.a */,
+				92D4CED219C9E95E004250A7 /* OCMock */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		92D4CED219C9E95E004250A7 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				92D4CED319C9E95E004250A7 /* NSNotificationCenter+OCMAdditions.h */,
+				92D4CED419C9E95E004250A7 /* OCMArg.h */,
+				92D4CED519C9E95E004250A7 /* OCMConstraint.h */,
+				92D4CED619C9E95E004250A7 /* OCMLocation.h */,
+				92D4CED719C9E95E004250A7 /* OCMMacroState.h */,
+				92D4CED819C9E95E004250A7 /* OCMock.h */,
+				92D4CED919C9E95E004250A7 /* OCMockObject.h */,
+				92D4CEDA19C9E95E004250A7 /* OCMRecorder.h */,
+				92D4CEDB19C9E95E004250A7 /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +356,7 @@
 				9290C4F119B3528A00581CB6 /* SidexSideViewController.m in Sources */,
 				9290C4E719B3528A00581CB6 /* main.m in Sources */,
 				9290C4EB19B3528A00581CB6 /* SidexSideAppDelegate.m in Sources */,
+				92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +481,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
 				INFOPLIST_FILE = "SidexSide/SidexSide-Info.plist";
@@ -390,6 +498,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
 				INFOPLIST_FILE = "SidexSide/SidexSide-Info.plist";
@@ -406,6 +518,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/zach/Downloads/parse-library-1.3.0",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
@@ -413,7 +526,26 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zach/Projects/SidexSide/SidexSideTests,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/zach/Projects/SidexSide/Libraries,
+				);
 				INFOPLIST_FILE = "SidexSideTests/SidexSideTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/OCMock,
+					3.1/iOS,
+					/Volumes/OCMock,
+					3.1/iOS,
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -428,10 +560,30 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/zach/Downloads/parse-library-1.3.0",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zach/Projects/SidexSide/SidexSideTests,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/zach/Projects/SidexSide/Libraries,
+				);
 				INFOPLIST_FILE = "SidexSideTests/SidexSideTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/OCMock,
+					3.1/iOS,
+					/Volumes/OCMock,
+					3.1/iOS,
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -457,6 +609,7 @@
 				9290C50B19B3528A00581CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9290C50C19B3528A00581CB6 /* Build configuration list for PBXNativeTarget "SidexSideTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +618,7 @@
 				9290C50E19B3528A00581CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
