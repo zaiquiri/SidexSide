@@ -1,6 +1,5 @@
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
-#import <Parse/Parse.h>
 
 @interface SidexSideTests : XCTestCase
 

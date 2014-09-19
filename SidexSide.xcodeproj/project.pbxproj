@@ -14,7 +14,6 @@
 		9290C4E719B3528A00581CB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9290C4E619B3528A00581CB6 /* main.m */; };
 		9290C4EB19B3528A00581CB6 /* SidexSideAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9290C4EA19B3528A00581CB6 /* SidexSideAppDelegate.m */; };
 		9290C4EE19B3528A00581CB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9290C4EC19B3528A00581CB6 /* Main.storyboard */; };
-		9290C4F119B3528A00581CB6 /* SidexSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9290C4F019B3528A00581CB6 /* SidexSideViewController.m */; };
 		9290C4F319B3528A00581CB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9290C4F219B3528A00581CB6 /* Images.xcassets */; };
 		9290C4FA19B3528A00581CB6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4F919B3528A00581CB6 /* XCTest.framework */; };
 		9290C4FB19B3528A00581CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DA19B3528A00581CB6 /* Foundation.framework */; };
@@ -35,9 +34,14 @@
 		92D4CEB719C93A47004250A7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB619C93A47004250A7 /* StoreKit.framework */; };
 		92D4CEB919C93A51004250A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB819C93A51004250A7 /* SystemConfiguration.framework */; };
 		92D4CEDD19C9E9ED004250A7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEDC19C9E9ED004250A7 /* libOCMock.a */; };
-		92D4CEE019C9EB87004250A7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEDE19C9EB87004250A7 /* Bolts.framework */; };
-		92D4CEE119C9EB87004250A7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEDF19C9EB87004250A7 /* Parse.framework */; };
 		92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */; };
+		92D4CEE719C9F10C004250A7 /* SidexSideSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEE619C9F10C004250A7 /* SidexSideSignUpViewController.m */; };
+		92D4CEED19CA025B004250A7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEEC19CA025B004250A7 /* HomeViewController.m */; };
+		92D4CEF719CC97BC004250A7 /* LogInAndSignUpHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEF619CC97BC004250A7 /* LogInAndSignUpHandler.m */; };
+		92D4CEFD19CC9CE5004250A7 /* SidexSidePFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEFC19CC9CE5004250A7 /* SidexSidePFUser.m */; };
+		92D4CEFF19CCA76C004250A7 /* HomeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEFE19CCA76C004250A7 /* HomeViewControllerTest.m */; };
+		92D4CF0219CCB4BB004250A7 /* LogInDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */; };
+		92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +66,6 @@
 		9290C4E919B3528A00581CB6 /* SidexSideAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidexSideAppDelegate.h; sourceTree = "<group>"; };
 		9290C4EA19B3528A00581CB6 /* SidexSideAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidexSideAppDelegate.m; sourceTree = "<group>"; };
 		9290C4ED19B3528A00581CB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9290C4EF19B3528A00581CB6 /* SidexSideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidexSideViewController.h; sourceTree = "<group>"; };
-		9290C4F019B3528A00581CB6 /* SidexSideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidexSideViewController.m; sourceTree = "<group>"; };
 		9290C4F219B3528A00581CB6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9290C4F819B3528A00581CB6 /* SidexSideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidexSideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9290C4F919B3528A00581CB6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -97,6 +99,19 @@
 		92D4CEDF19C9EB87004250A7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.3.0/Parse.framework"; sourceTree = "<group>"; };
 		92D4CEE219C9EF0B004250A7 /* SidexSideLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidexSideLoginViewController.h; sourceTree = "<group>"; };
 		92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidexSideLoginViewController.m; sourceTree = "<group>"; };
+		92D4CEE519C9F10C004250A7 /* SidexSideSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidexSideSignUpViewController.h; sourceTree = "<group>"; };
+		92D4CEE619C9F10C004250A7 /* SidexSideSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidexSideSignUpViewController.m; sourceTree = "<group>"; };
+		92D4CEEB19CA025B004250A7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		92D4CEEC19CA025B004250A7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		92D4CEF519CC97BC004250A7 /* LogInAndSignUpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInAndSignUpHandler.h; sourceTree = "<group>"; };
+		92D4CEF619CC97BC004250A7 /* LogInAndSignUpHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInAndSignUpHandler.m; sourceTree = "<group>"; };
+		92D4CEFB19CC9CE5004250A7 /* SidexSidePFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidexSidePFUser.h; sourceTree = "<group>"; };
+		92D4CEFC19CC9CE5004250A7 /* SidexSidePFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidexSidePFUser.m; sourceTree = "<group>"; };
+		92D4CEFE19CCA76C004250A7 /* HomeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewControllerTest.m; sourceTree = "<group>"; };
+		92D4CF0019CCB4BB004250A7 /* LogInDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInDelegate.h; sourceTree = "<group>"; };
+		92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInDelegate.m; sourceTree = "<group>"; };
+		92D4CF0319CCB4DB004250A7 /* SignUpDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDelegate.h; sourceTree = "<group>"; };
+		92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				92D4CEDD19C9E9ED004250A7 /* libOCMock.a in Frameworks */,
-				92D4CEE019C9EB87004250A7 /* Bolts.framework in Frameworks */,
-				92D4CEE119C9EB87004250A7 /* Parse.framework in Frameworks */,
 				9290C4FA19B3528A00581CB6 /* XCTest.framework in Frameworks */,
 				9290C4FC19B3528A00581CB6 /* UIKit.framework in Frameworks */,
 				9290C4FB19B3528A00581CB6 /* Foundation.framework in Frameworks */,
@@ -188,15 +201,20 @@
 		9290C4E019B3528A00581CB6 /* SidexSide */ = {
 			isa = PBXGroup;
 			children = (
+				92D4CEF519CC97BC004250A7 /* LogInAndSignUpHandler.h */,
+				92D4CEF619CC97BC004250A7 /* LogInAndSignUpHandler.m */,
+				92D4CEF419CC9482004250A7 /* Controllers */,
 				9290C4E919B3528A00581CB6 /* SidexSideAppDelegate.h */,
 				9290C4EA19B3528A00581CB6 /* SidexSideAppDelegate.m */,
 				9290C4EC19B3528A00581CB6 /* Main.storyboard */,
-				9290C4EF19B3528A00581CB6 /* SidexSideViewController.h */,
-				9290C4F019B3528A00581CB6 /* SidexSideViewController.m */,
 				9290C4F219B3528A00581CB6 /* Images.xcassets */,
 				9290C4E119B3528A00581CB6 /* Supporting Files */,
-				92D4CEE219C9EF0B004250A7 /* SidexSideLoginViewController.h */,
-				92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */,
+				92D4CEFB19CC9CE5004250A7 /* SidexSidePFUser.h */,
+				92D4CEFC19CC9CE5004250A7 /* SidexSidePFUser.m */,
+				92D4CF0019CCB4BB004250A7 /* LogInDelegate.h */,
+				92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */,
+				92D4CF0319CCB4DB004250A7 /* SignUpDelegate.h */,
+				92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */,
 			);
 			path = SidexSide;
 			sourceTree = "<group>";
@@ -217,6 +235,7 @@
 			children = (
 				9290C50519B3528A00581CB6 /* SidexSideTests.m */,
 				9290C50019B3528A00581CB6 /* Supporting Files */,
+				92D4CEFE19CCA76C004250A7 /* HomeViewControllerTest.m */,
 			);
 			path = SidexSideTests;
 			sourceTree = "<group>";
@@ -253,6 +272,19 @@
 				92D4CEDB19C9E95E004250A7 /* OCMStubRecorder.h */,
 			);
 			path = OCMock;
+			sourceTree = "<group>";
+		};
+		92D4CEF419CC9482004250A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92D4CEEB19CA025B004250A7 /* HomeViewController.h */,
+				92D4CEEC19CA025B004250A7 /* HomeViewController.m */,
+				92D4CEE219C9EF0B004250A7 /* SidexSideLoginViewController.h */,
+				92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */,
+				92D4CEE519C9F10C004250A7 /* SidexSideSignUpViewController.h */,
+				92D4CEE619C9F10C004250A7 /* SidexSideSignUpViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +385,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9290C4F119B3528A00581CB6 /* SidexSideViewController.m in Sources */,
 				9290C4E719B3528A00581CB6 /* main.m in Sources */,
 				9290C4EB19B3528A00581CB6 /* SidexSideAppDelegate.m in Sources */,
+				92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */,
 				92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */,
+				92D4CEE719C9F10C004250A7 /* SidexSideSignUpViewController.m in Sources */,
+				92D4CEFD19CC9CE5004250A7 /* SidexSidePFUser.m in Sources */,
+				92D4CEF719CC97BC004250A7 /* LogInAndSignUpHandler.m in Sources */,
+				92D4CF0219CCB4BB004250A7 /* LogInDelegate.m in Sources */,
+				92D4CEED19CA025B004250A7 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9290C50619B3528A00581CB6 /* SidexSideTests.m in Sources */,
+				92D4CEFF19CCA76C004250A7 /* HomeViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
