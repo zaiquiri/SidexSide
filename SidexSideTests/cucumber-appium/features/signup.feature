@@ -4,7 +4,8 @@ I want to be able to create an account
 So I can start using the app
 
 Scenario: New users should be able to sign up
-  Given I am a new user
+  Given I press the sign up button
+  And I enter my email address "email@domain.com"
   When I open the app
   Then I want to be able to sign up
 

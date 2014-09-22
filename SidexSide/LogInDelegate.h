@@ -1,13 +1,8 @@
-//
-//  LogInDelegate.h
-//  SidexSide
-//
-//  Created by zach on 9/19/14.
-//  Copyright (c) 2014 zappery. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface LogInDelegate : NSObject
+@interface LogInDelegate : NSObject <PFLogInViewControllerDelegate>
+
+- (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password;
 
 @end

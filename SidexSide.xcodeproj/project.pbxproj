@@ -43,6 +43,7 @@
 		92D4CF0219CCB4BB004250A7 /* LogInDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */; };
 		92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */; };
 		92D4CF0719CE2332004250A7 /* LogInAndSignUpHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */; };
+		92D4CF0D19D0C3CB004250A7 /* LogInDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		92D4CF0319CCB4DB004250A7 /* SignUpDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDelegate.h; sourceTree = "<group>"; };
 		92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDelegate.m; sourceTree = "<group>"; };
 		92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInAndSignUpHandlerTest.m; sourceTree = "<group>"; };
+		92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInDelegateTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				9290C50519B3528A00581CB6 /* SidexSideTests.m */,
 				92D4CEFE19CCA76C004250A7 /* HomeViewControllerTest.m */,
 				92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */,
+				92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */,
 			);
 			path = SidexSideTests;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			files = (
 				92D4CF0719CE2332004250A7 /* LogInAndSignUpHandlerTest.m in Sources */,
 				9290C50619B3528A00581CB6 /* SidexSideTests.m in Sources */,
+				92D4CF0D19D0C3CB004250A7 /* LogInDelegateTest.m in Sources */,
 				92D4CEFF19CCA76C004250A7 /* HomeViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
