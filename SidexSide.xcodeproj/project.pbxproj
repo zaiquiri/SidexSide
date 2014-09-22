@@ -42,6 +42,7 @@
 		92D4CEFF19CCA76C004250A7 /* HomeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEFE19CCA76C004250A7 /* HomeViewControllerTest.m */; };
 		92D4CF0219CCB4BB004250A7 /* LogInDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */; };
 		92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */; };
+		92D4CF0719CE2332004250A7 /* LogInAndSignUpHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInDelegate.m; sourceTree = "<group>"; };
 		92D4CF0319CCB4DB004250A7 /* SignUpDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpDelegate.h; sourceTree = "<group>"; };
 		92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDelegate.m; sourceTree = "<group>"; };
+		92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInAndSignUpHandlerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,20 +203,14 @@
 		9290C4E019B3528A00581CB6 /* SidexSide */ = {
 			isa = PBXGroup;
 			children = (
-				92D4CEF519CC97BC004250A7 /* LogInAndSignUpHandler.h */,
-				92D4CEF619CC97BC004250A7 /* LogInAndSignUpHandler.m */,
+				92D4CF0919D065E8004250A7 /* LoginSignup */,
+				92D4CF0819D065C0004250A7 /* ParseWrappers */,
 				92D4CEF419CC9482004250A7 /* Controllers */,
 				9290C4E919B3528A00581CB6 /* SidexSideAppDelegate.h */,
 				9290C4EA19B3528A00581CB6 /* SidexSideAppDelegate.m */,
 				9290C4EC19B3528A00581CB6 /* Main.storyboard */,
 				9290C4F219B3528A00581CB6 /* Images.xcassets */,
 				9290C4E119B3528A00581CB6 /* Supporting Files */,
-				92D4CEFB19CC9CE5004250A7 /* SidexSidePFUser.h */,
-				92D4CEFC19CC9CE5004250A7 /* SidexSidePFUser.m */,
-				92D4CF0019CCB4BB004250A7 /* LogInDelegate.h */,
-				92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */,
-				92D4CF0319CCB4DB004250A7 /* SignUpDelegate.h */,
-				92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */,
 			);
 			path = SidexSide;
 			sourceTree = "<group>";
@@ -233,9 +229,10 @@
 		9290C4FF19B3528A00581CB6 /* SidexSideTests */ = {
 			isa = PBXGroup;
 			children = (
-				9290C50519B3528A00581CB6 /* SidexSideTests.m */,
 				9290C50019B3528A00581CB6 /* Supporting Files */,
+				9290C50519B3528A00581CB6 /* SidexSideTests.m */,
 				92D4CEFE19CCA76C004250A7 /* HomeViewControllerTest.m */,
+				92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */,
 			);
 			path = SidexSideTests;
 			sourceTree = "<group>";
@@ -285,6 +282,28 @@
 				92D4CEE619C9F10C004250A7 /* SidexSideSignUpViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		92D4CF0819D065C0004250A7 /* ParseWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				92D4CEFB19CC9CE5004250A7 /* SidexSidePFUser.h */,
+				92D4CEFC19CC9CE5004250A7 /* SidexSidePFUser.m */,
+			);
+			name = ParseWrappers;
+			sourceTree = "<group>";
+		};
+		92D4CF0919D065E8004250A7 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				92D4CEF519CC97BC004250A7 /* LogInAndSignUpHandler.h */,
+				92D4CEF619CC97BC004250A7 /* LogInAndSignUpHandler.m */,
+				92D4CF0019CCB4BB004250A7 /* LogInDelegate.h */,
+				92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */,
+				92D4CF0319CCB4DB004250A7 /* SignUpDelegate.h */,
+				92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */,
+			);
+			name = LoginSignup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D4CF0719CE2332004250A7 /* LogInAndSignUpHandlerTest.m in Sources */,
 				9290C50619B3528A00581CB6 /* SidexSideTests.m in Sources */,
 				92D4CEFF19CCA76C004250A7 /* HomeViewControllerTest.m in Sources */,
 			);

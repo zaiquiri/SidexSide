@@ -9,6 +9,14 @@
 
 @implementation SidexSidePFUser
 
+- (id)init {
+    if (self = [super init]) {
+        _pfUser = [PFUser currentUser];
+        return self;
+    }
+    return nil;
+}
+
 - (id)initWithPFUser:(PFUser *)pfUser {
     if (self = [super init]) {
         _pfUser = pfUser;
@@ -17,9 +25,8 @@
     return nil;
 }
 
-
 - (instancetype)currentUser {
-    return [[SidexSidePFUser alloc]initWithPFUser:[PFUser currentUser]];
+    return [PFUser currentUser] ? [[SidexSidePFUser alloc]initWithPFUser:[PFUser currentUser]] : nil;
 }
 
 @end

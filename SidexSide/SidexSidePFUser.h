@@ -3,7 +3,6 @@
 
 @interface SidexSidePFUser : NSObject
 
-- (id)initWithPFUser:(PFUser *)pfUser;
 - (PFUser *)currentUser;
 
 @end

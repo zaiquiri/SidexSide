@@ -1,5 +1,12 @@
 #import "SidexSideAppDelegate.h"
 #import <Parse/Parse.h>
+#import "SidexSideLoginViewController.h"
+#import "SidexSideSignUpViewController.h"
+#import "LogInAndSignUpHandler.h"
+#import "LogInDelegate.h"
+#import "SignUpDelegate.h"
+#import "HomeViewController.h"
+#import "SidexSidePFUser.h"
 
 @implementation SidexSideAppDelegate
 
@@ -7,6 +14,23 @@
 {
     [Parse setApplicationId:@"xMsrdzqyWstkeR2tiGr0xaMNso6Qhl8lTfSJO2QS"
                   clientKey:@"hEiLNnGFjDOu62b0cIKRqLJGgp9FjN7GyDSNLODF"];
+    
+    SidexSideLoginViewController *logInViewController = [[SidexSideLoginViewController alloc] init];
+    SidexSideSignUpViewController *signUpViewController = [[SidexSideSignUpViewController alloc] init];
+    LogInDelegate *logInDelegate = [[LogInDelegate alloc] init];
+    SignUpDelegate *signUpDelegate =[[SignUpDelegate alloc] init];
+    
+    LogInAndSignUpHandler *logInAndSignUpHandler = [[LogInAndSignUpHandler alloc] initWithLogInViewController:logInViewController signUpViewController:signUpViewController logInDelegate:logInDelegate signUpDelegate:signUpDelegate];
+    
+    SidexSidePFUser *pfUser = [[SidexSidePFUser alloc] init];
+    
+    UINavigationController *rootNavigationController = (UINavigationController *) self.window.rootViewController;
+    HomeViewController *homeViewController = (HomeViewController *)rootNavigationController.viewControllers[0];
+    
+    homeViewController.logInAndSignUpHandler = logInAndSignUpHandler;
+    homeViewController.pfUser = pfUser;
+    
+    
     return YES;
 }
 							

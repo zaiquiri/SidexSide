@@ -34,7 +34,7 @@
     
     [homeViewController viewDidAppear:true];
     
-    OCMVerify([logInAndSignUpHandler showLogin]);
+    OCMVerify([logInAndSignUpHandler showLoginFrom:homeViewController]);
     
 }
 
@@ -46,7 +46,7 @@
     homeViewController.pfUser = pfUser;
     homeViewController.logInAndSignUpHandler = logInAndSignUpHandler;
     
-    [[logInAndSignUpHandler reject] showLogin];
+    [[logInAndSignUpHandler reject] showLoginFrom:homeViewController];
     
     [homeViewController viewDidAppear:true];
     

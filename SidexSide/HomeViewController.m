@@ -9,7 +9,7 @@
     [super viewDidAppear:animated];
     
     if (![pfUser currentUser]) {
-        [logInAndSignUpHandler showLogin];
+        [logInAndSignUpHandler showLoginFrom:self];
     }
 }
 
