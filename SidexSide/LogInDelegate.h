@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 #import "MissingInformationAlert.h"
+#import "SidexSideLoginViewController.h"
 
 @interface LogInDelegate : NSObject <PFLogInViewControllerDelegate>
 

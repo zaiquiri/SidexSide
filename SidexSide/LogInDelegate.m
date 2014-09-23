@@ -28,4 +28,17 @@
     return NO;
 }
 
+- (void) logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
+    [logInController.parentViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
+    NSLog(@"Failed to log in...");
+}
+
+- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
+    [logInController.parentViewController.navigationController popViewControllerAnimated:YES];
+}
+
+
 @end

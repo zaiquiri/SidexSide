@@ -119,6 +119,7 @@
 		92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInDelegateTest.m; sourceTree = "<group>"; };
 		92D4CF0E19D1E623004250A7 /* MissingInformationAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissingInformationAlert.h; sourceTree = "<group>"; };
 		92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissingInformationAlert.m; sourceTree = "<group>"; };
+		92D4CF1119D1FB9C004250A7 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = "../../Downloads/OCHamcrest-1.9/OCHamcrestIOS.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +183,7 @@
 		9290C4D919B3528A00581CB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92D4CF1119D1FB9C004250A7 /* OCHamcrestIOS.framework */,
 				92D4CEDE19C9EB87004250A7 /* Bolts.framework */,
 				92D4CEDF19C9EB87004250A7 /* Parse.framework */,
 				92D4CEB819C93A51004250A7 /* SystemConfiguration.framework */,
@@ -587,6 +589,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"/Users/zach/Downloads/parse-library-1.3.0",
+					"/Users/zach/Downloads/OCHamcrest-1.9",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
@@ -629,6 +632,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"/Users/zach/Downloads/parse-library-1.3.0",
+					"/Users/zach/Downloads/OCHamcrest-1.9",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";

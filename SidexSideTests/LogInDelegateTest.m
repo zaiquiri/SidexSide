@@ -27,8 +27,9 @@
     username = @"username";
     password = @"password";
     missingInfoAlert = OCMClassMock([MissingInformationAlert class]);
+    logInViewController = OCMClassMock([SidexSideLoginViewController class]);
     logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert];
-    logInViewController = [[SidexSideLoginViewController alloc] init];
+
     
 }
 
@@ -77,6 +78,27 @@
     
     XCTAssertTrue(returnValue);
     [missingInfoAlert verify];
+}
+
+- (void)testShouldDismissLogInViewControllerWhenUserSignsInSuccesfully {
+    PFUser *user = [[PFUser alloc] init];
+    id homeViewController = OCMClassMock([UIViewController class]);
+    OCMStub([logInViewController parentViewController]).andReturn(homeViewController);
+    
+    [logInDelegate logInViewController:logInViewController didLogInUser:user];
+    
+    OCMVerify([homeViewController dismissViewControllerAnimated:YES completion:nil]);
+}
+
+- (void)testShouldDismissLogInViewWhenUserCancelsLogIn {
+    id homeViewController = OCMClassMock([UIViewController class]);
+    id navigationController = OCMClassMock([UINavigationController class]);
+    OCMStub([logInViewController parentViewController]).andReturn(homeViewController);
+    OCMStub([homeViewController navigationController]).andReturn(navigationController);
+    
+    [logInDelegate logInViewControllerDidCancelLogIn:logInViewController];
+    
+    OCMVerify([navigationController popViewControllerAnimated:YES]);
 }
 
 @end
