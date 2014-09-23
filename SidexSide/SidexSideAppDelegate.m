@@ -17,7 +17,8 @@
     
     SidexSideLoginViewController *logInViewController = [[SidexSideLoginViewController alloc] init];
     SidexSideSignUpViewController *signUpViewController = [[SidexSideSignUpViewController alloc] init];
-    LogInDelegate *logInDelegate = [[LogInDelegate alloc] init];
+    MissingInformationAlert *missingInfoAlert = [[MissingInformationAlert alloc] init];
+    LogInDelegate *logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert];
     SignUpDelegate *signUpDelegate =[[SignUpDelegate alloc] init];
     
     LogInAndSignUpHandler *logInAndSignUpHandler = [[LogInAndSignUpHandler alloc] initWithLogInViewController:logInViewController signUpViewController:signUpViewController logInDelegate:logInDelegate signUpDelegate:signUpDelegate];

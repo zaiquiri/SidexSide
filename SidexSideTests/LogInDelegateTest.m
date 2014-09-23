@@ -9,6 +9,7 @@
 @property (strong, nonatomic) NSString *password;
 @property (strong, nonatomic) LogInDelegate *logInDelegate;
 @property (strong, nonatomic) SidexSideLoginViewController *logInViewController;
+@property (strong, nonatomic) id missingInfoAlert;
 
 @end
 
@@ -18,14 +19,17 @@
 @synthesize password;
 @synthesize logInDelegate;
 @synthesize logInViewController;
+@synthesize missingInfoAlert;
 
 - (void)setUp
 {
     [super setUp];
     username = @"username";
     password = @"password";
-    logInDelegate = [[LogInDelegate alloc] init];
+    missingInfoAlert = OCMClassMock([MissingInformationAlert class]);
+    logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert];
     logInViewController = [[SidexSideLoginViewController alloc] init];
+    
 }
 
 - (void)tearDown
@@ -33,30 +37,46 @@
     [super tearDown];
 }
 
-- (void)testShouldReturnNOWhenThereIsNoPassword
+- (void)testShouldReturnNOAndShowAlertWhenThereIsNoPassword
 {
-    XCTAssertFalse([logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:username password:nil]);
+    BOOL returnValue = [logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:username password:nil];
+    
+    XCTAssertFalse(returnValue);
+    OCMVerify([missingInfoAlert show]);
 }
 
-- (void)testShouldReturnNOWhenThereIsNoUsername
+- (void)testShouldReturnNOAndShowAlertWhenThereIsNoUsername
 {
-    XCTAssertFalse([logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:nil password:password]);
+    BOOL returnValue = [logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:nil password:password];
+    
+    XCTAssertFalse(returnValue);
+    OCMVerify([missingInfoAlert show]);
 }
 
-- (void)testShouldReturnNOWhenPasswordLengthIsZero
+- (void)testShouldReturnNOAndShowAlertWhenPasswordLengthIsZero
 {
-    XCTAssertFalse([logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:username password:@""]);
+    BOOL returnValue = [logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:username password:@""];
+    
+    XCTAssertFalse(returnValue);
+    OCMVerify([missingInfoAlert show]);
 }
 
-- (void)testShouldReturnNOWhenUsernameLengthIsZero
+- (void)testShouldReturnNOAndShowAlertWhenUsernameLengthIsZero
 {
-    XCTAssertFalse([logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:@"" password:password]);
-
+    BOOL returnValue = [logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:@"" password:password];
+    
+    XCTAssertFalse(returnValue);
+    OCMVerify([missingInfoAlert show]);
 }
 
-- (void)testShouldReturnYESWhenPasswordAndUsernameAreComplete
+- (void)testShouldReturnYESAndNotShowAlertWhenPasswordAndUsernameAreComplete
 {
-    XCTAssertTrue([logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:username password:password]);
+    [[missingInfoAlert reject] show];
+    
+    BOOL returnValue = [logInDelegate logInViewController:logInViewController shouldBeginLogInWithUsername:username password:password];
+    
+    XCTAssertTrue(returnValue);
+    [missingInfoAlert verify];
 }
 
 @end

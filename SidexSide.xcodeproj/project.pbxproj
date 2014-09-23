@@ -44,6 +44,7 @@
 		92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */; };
 		92D4CF0719CE2332004250A7 /* LogInAndSignUpHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */; };
 		92D4CF0D19D0C3CB004250A7 /* LogInDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */; };
+		92D4CF1019D1E623004250A7 /* MissingInformationAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,8 @@
 		92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDelegate.m; sourceTree = "<group>"; };
 		92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInAndSignUpHandlerTest.m; sourceTree = "<group>"; };
 		92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInDelegateTest.m; sourceTree = "<group>"; };
+		92D4CF0E19D1E623004250A7 /* MissingInformationAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissingInformationAlert.h; sourceTree = "<group>"; };
+		92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissingInformationAlert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,8 @@
 				9290C4EC19B3528A00581CB6 /* Main.storyboard */,
 				9290C4F219B3528A00581CB6 /* Images.xcassets */,
 				9290C4E119B3528A00581CB6 /* Supporting Files */,
+				92D4CF0E19D1E623004250A7 /* MissingInformationAlert.h */,
+				92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */,
 			);
 			path = SidexSide;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 			files = (
 				9290C4E719B3528A00581CB6 /* main.m in Sources */,
 				9290C4EB19B3528A00581CB6 /* SidexSideAppDelegate.m in Sources */,
+				92D4CF1019D1E623004250A7 /* MissingInformationAlert.m in Sources */,
 				92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */,
 				92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */,
 				92D4CEE719C9F10C004250A7 /* SidexSideSignUpViewController.m in Sources */,
