@@ -1,5 +1,10 @@
 #import "SignUpDelegate.h"
 
+static NSString *const usernameKey = @"username";
+static NSString *const passwordKey = @"password";
+static NSString *const passwordConfirmKey = @"additionalField";
+static NSString *const emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
+
 @interface SignUpDelegate()
 @property (strong, nonatomic) MissingInformationAlert *missingInfoAlert;
 @property (strong, nonatomic) MismatchPasswordAlert *mismatchPasswordAlert;
@@ -26,27 +31,9 @@
 
 - (BOOL)signUpViewController:(PFSignUpViewController *)signUpController shouldBeginSignUp:(NSDictionary *)info {
     
-    BOOL informationComplete = YES;
-    for (id key in info) {
-        NSString *field = [info objectForKey:key];
-        if (!field || field.length == 0) {
-            informationComplete = NO;
-            break;
-        }
-    }
-    
-    BOOL passwordsMatch = YES;
-    if (![[info objectForKey:@"password"] isEqualToString:[info objectForKey:@"additionalField"]]){
-        passwordsMatch = NO;
-    }
-    
-    BOOL emailIsValid = YES;
-    email = [info objectForKey:@"username"];
-    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
-    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-    if (![emailTest evaluateWithObject:email]) {
-        emailIsValid = NO;
-    }
+    BOOL informationComplete = [self informationIsComplete:info];
+    BOOL passwordsMatch = [self passwordsMatch:info];
+    BOOL emailIsValid = [self emailIsValid:info];
     
     if (!informationComplete) {
         [missingInfoAlert show];
@@ -67,6 +54,34 @@
 
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didFailToSignUpWithError:(NSError *)error {
     NSLog(@"Failed to sign up");
+}
+
+- (BOOL)informationIsComplete:(NSDictionary *)info {
+    BOOL informationComplete = YES;
+    for (id key in info) {
+        NSString *field = [info objectForKey:key];
+        if (!field || field.length == 0) {
+            informationComplete = NO;
+            break;
+        }
+    }
+    return informationComplete;
+}
+
+- (BOOL)passwordsMatch:(NSDictionary *)info {
+    if (![[info objectForKey:passwordKey] isEqualToString:[info objectForKey:passwordConfirmKey]]){
+        return NO;
+    }
+    return YES;
+}
+
+- (BOOL)emailIsValid:(NSDictionary *)info {
+    email = [info objectForKey:usernameKey];
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    if (![emailTest evaluateWithObject:email]) {
+        return NO;
+    }
+    return YES;
 }
 
 @end
