@@ -20,8 +20,6 @@
 		9290C4FC19B3528A00581CB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DE19B3528A00581CB6 /* UIKit.framework */; };
 		9290C50419B3528A00581CB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9290C50219B3528A00581CB6 /* InfoPlist.strings */; };
 		9290C50619B3528A00581CB6 /* SidexSideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9290C50519B3528A00581CB6 /* SidexSideTests.m */; };
-		92D4CEA219C939B9004250A7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA019C939B9004250A7 /* Bolts.framework */; };
-		92D4CEA319C939B9004250A7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA119C939B9004250A7 /* Parse.framework */; };
 		92D4CEA519C939E4004250A7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA419C939E4004250A7 /* Accounts.framework */; };
 		92D4CEA719C939ED004250A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA619C939ED004250A7 /* AudioToolbox.framework */; };
 		92D4CEA919C939F4004250A7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEA819C939F4004250A7 /* CFNetwork.framework */; };
@@ -33,7 +31,6 @@
 		92D4CEB519C93A3B004250A7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB419C93A3B004250A7 /* Social.framework */; };
 		92D4CEB719C93A47004250A7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB619C93A47004250A7 /* StoreKit.framework */; };
 		92D4CEB919C93A51004250A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEB819C93A51004250A7 /* SystemConfiguration.framework */; };
-		92D4CEDD19C9E9ED004250A7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CEDC19C9E9ED004250A7 /* libOCMock.a */; };
 		92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */; };
 		92D4CEE719C9F10C004250A7 /* SidexSideSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEE619C9F10C004250A7 /* SidexSideSignUpViewController.m */; };
 		92D4CEED19CA025B004250A7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CEEC19CA025B004250A7 /* HomeViewController.m */; };
@@ -45,6 +42,13 @@
 		92D4CF0719CE2332004250A7 /* LogInAndSignUpHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */; };
 		92D4CF0D19D0C3CB004250A7 /* LogInDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */; };
 		92D4CF1019D1E623004250A7 /* MissingInformationAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */; };
+		92D4CF1619D2468C004250A7 /* SignUpDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF1519D2468C004250A7 /* SignUpDelegateTest.m */; };
+		92D4CF1919D26A8B004250A7 /* MismatchPasswordAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF1819D26A8B004250A7 /* MismatchPasswordAlert.m */; };
+		92D4CF1B19D31C16004250A7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CF1A19D31C16004250A7 /* Parse.framework */; };
+		92D4CF1D19D31F60004250A7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CF1C19D31F60004250A7 /* Bolts.framework */; };
+		92D4CF1F19D32A86004250A7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CF1E19D32A86004250A7 /* libOCMock.a */; };
+		92D4CF2019D32AAE004250A7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CF1E19D32A86004250A7 /* libOCMock.a */; };
+		92D4CF2319D32FA2004250A7 /* InvalidEmailAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF2219D32FA2004250A7 /* InvalidEmailAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +80,6 @@
 		9290C50319B3528A00581CB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9290C50519B3528A00581CB6 /* SidexSideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidexSideTests.m; sourceTree = "<group>"; };
 		92D4CEA019C939B9004250A7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		92D4CEA119C939B9004250A7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		92D4CEA419C939E4004250A7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		92D4CEA619C939ED004250A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		92D4CEA819C939F4004250A7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -97,9 +100,6 @@
 		92D4CED919C9E95E004250A7 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		92D4CEDA19C9E95E004250A7 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
 		92D4CEDB19C9E95E004250A7 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
-		92D4CEDC19C9E9ED004250A7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "/Volumes/OCMock 3.1/iOS/libOCMock.a"; sourceTree = "<absolute>"; };
-		92D4CEDE19C9EB87004250A7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.3.0/Bolts.framework"; sourceTree = "<group>"; };
-		92D4CEDF19C9EB87004250A7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.3.0/Parse.framework"; sourceTree = "<group>"; };
 		92D4CEE219C9EF0B004250A7 /* SidexSideLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidexSideLoginViewController.h; sourceTree = "<group>"; };
 		92D4CEE319C9EF0B004250A7 /* SidexSideLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidexSideLoginViewController.m; sourceTree = "<group>"; };
 		92D4CEE519C9F10C004250A7 /* SidexSideSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidexSideSignUpViewController.h; sourceTree = "<group>"; };
@@ -119,7 +119,14 @@
 		92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInDelegateTest.m; sourceTree = "<group>"; };
 		92D4CF0E19D1E623004250A7 /* MissingInformationAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissingInformationAlert.h; sourceTree = "<group>"; };
 		92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissingInformationAlert.m; sourceTree = "<group>"; };
-		92D4CF1119D1FB9C004250A7 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = "../../Downloads/OCHamcrest-1.9/OCHamcrestIOS.framework"; sourceTree = "<group>"; };
+		92D4CF1519D2468C004250A7 /* SignUpDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDelegateTest.m; sourceTree = "<group>"; };
+		92D4CF1719D26A8B004250A7 /* MismatchPasswordAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MismatchPasswordAlert.h; sourceTree = "<group>"; };
+		92D4CF1819D26A8B004250A7 /* MismatchPasswordAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MismatchPasswordAlert.m; sourceTree = "<group>"; };
+		92D4CF1A19D31C16004250A7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.3.0/Parse.framework"; sourceTree = "<group>"; };
+		92D4CF1C19D31F60004250A7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.3.0/Bolts.framework"; sourceTree = "<group>"; };
+		92D4CF1E19D32A86004250A7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		92D4CF2119D32FA2004250A7 /* InvalidEmailAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvalidEmailAlert.h; sourceTree = "<group>"; };
+		92D4CF2219D32FA2004250A7 /* InvalidEmailAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvalidEmailAlert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +134,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D4CF1D19D31F60004250A7 /* Bolts.framework in Frameworks */,
+				92D4CF1F19D32A86004250A7 /* libOCMock.a in Frameworks */,
+				92D4CF1B19D31C16004250A7 /* Parse.framework in Frameworks */,
 				92D4CEB919C93A51004250A7 /* SystemConfiguration.framework in Frameworks */,
 				92D4CEB719C93A47004250A7 /* StoreKit.framework in Frameworks */,
 				92D4CEB519C93A3B004250A7 /* Social.framework in Frameworks */,
@@ -141,8 +151,6 @@
 				9290C4DD19B3528A00581CB6 /* CoreGraphics.framework in Frameworks */,
 				9290C4DF19B3528A00581CB6 /* UIKit.framework in Frameworks */,
 				9290C4DB19B3528A00581CB6 /* Foundation.framework in Frameworks */,
-				92D4CEA219C939B9004250A7 /* Bolts.framework in Frameworks */,
-				92D4CEA319C939B9004250A7 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D4CEDD19C9E9ED004250A7 /* libOCMock.a in Frameworks */,
+				92D4CF2019D32AAE004250A7 /* libOCMock.a in Frameworks */,
 				9290C4FA19B3528A00581CB6 /* XCTest.framework in Frameworks */,
 				9290C4FC19B3528A00581CB6 /* UIKit.framework in Frameworks */,
 				9290C4FB19B3528A00581CB6 /* Foundation.framework in Frameworks */,
@@ -183,9 +191,8 @@
 		9290C4D919B3528A00581CB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				92D4CF1119D1FB9C004250A7 /* OCHamcrestIOS.framework */,
-				92D4CEDE19C9EB87004250A7 /* Bolts.framework */,
-				92D4CEDF19C9EB87004250A7 /* Parse.framework */,
+				92D4CF1C19D31F60004250A7 /* Bolts.framework */,
+				92D4CF1A19D31C16004250A7 /* Parse.framework */,
 				92D4CEB819C93A51004250A7 /* SystemConfiguration.framework */,
 				92D4CEB619C93A47004250A7 /* StoreKit.framework */,
 				92D4CEB419C93A3B004250A7 /* Social.framework */,
@@ -198,7 +205,6 @@
 				92D4CEA619C939ED004250A7 /* AudioToolbox.framework */,
 				92D4CEA419C939E4004250A7 /* Accounts.framework */,
 				92D4CEA019C939B9004250A7 /* Bolts.framework */,
-				92D4CEA119C939B9004250A7 /* Parse.framework */,
 				9290C4DA19B3528A00581CB6 /* Foundation.framework */,
 				9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */,
 				9290C4DE19B3528A00581CB6 /* UIKit.framework */,
@@ -220,6 +226,10 @@
 				9290C4E119B3528A00581CB6 /* Supporting Files */,
 				92D4CF0E19D1E623004250A7 /* MissingInformationAlert.h */,
 				92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */,
+				92D4CF1719D26A8B004250A7 /* MismatchPasswordAlert.h */,
+				92D4CF1819D26A8B004250A7 /* MismatchPasswordAlert.m */,
+				92D4CF2119D32FA2004250A7 /* InvalidEmailAlert.h */,
+				92D4CF2219D32FA2004250A7 /* InvalidEmailAlert.m */,
 			);
 			path = SidexSide;
 			sourceTree = "<group>";
@@ -238,11 +248,10 @@
 		9290C4FF19B3528A00581CB6 /* SidexSideTests */ = {
 			isa = PBXGroup;
 			children = (
+				92D4CF1419D20B66004250A7 /* LoginSignup */,
+				92D4CF1319D20B5E004250A7 /* Controllers */,
 				9290C50019B3528A00581CB6 /* Supporting Files */,
 				9290C50519B3528A00581CB6 /* SidexSideTests.m */,
-				92D4CEFE19CCA76C004250A7 /* HomeViewControllerTest.m */,
-				92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */,
-				92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */,
 			);
 			path = SidexSideTests;
 			sourceTree = "<group>";
@@ -259,7 +268,7 @@
 		92D4CED119C9E95E004250A7 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				92D4CEDC19C9E9ED004250A7 /* libOCMock.a */,
+				92D4CF1E19D32A86004250A7 /* libOCMock.a */,
 				92D4CED219C9E95E004250A7 /* OCMock */,
 			);
 			path = Libraries;
@@ -312,6 +321,24 @@
 				92D4CF0119CCB4BB004250A7 /* LogInDelegate.m */,
 				92D4CF0319CCB4DB004250A7 /* SignUpDelegate.h */,
 				92D4CF0419CCB4DB004250A7 /* SignUpDelegate.m */,
+			);
+			name = LoginSignup;
+			sourceTree = "<group>";
+		};
+		92D4CF1319D20B5E004250A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92D4CEFE19CCA76C004250A7 /* HomeViewControllerTest.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		92D4CF1419D20B66004250A7 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				92D4CF0619CE2332004250A7 /* LogInAndSignUpHandlerTest.m */,
+				92D4CF0C19D0C3CB004250A7 /* LogInDelegateTest.m */,
+				92D4CF1519D2468C004250A7 /* SignUpDelegateTest.m */,
 			);
 			name = LoginSignup;
 			sourceTree = "<group>";
@@ -419,8 +446,10 @@
 				92D4CF1019D1E623004250A7 /* MissingInformationAlert.m in Sources */,
 				92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */,
 				92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */,
+				92D4CF2319D32FA2004250A7 /* InvalidEmailAlert.m in Sources */,
 				92D4CEE719C9F10C004250A7 /* SidexSideSignUpViewController.m in Sources */,
 				92D4CEFD19CC9CE5004250A7 /* SidexSidePFUser.m in Sources */,
+				92D4CF1919D26A8B004250A7 /* MismatchPasswordAlert.m in Sources */,
 				92D4CEF719CC97BC004250A7 /* LogInAndSignUpHandler.m in Sources */,
 				92D4CF0219CCB4BB004250A7 /* LogInDelegate.m in Sources */,
 				92D4CEED19CA025B004250A7 /* HomeViewController.m in Sources */,
@@ -431,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D4CF1619D2468C004250A7 /* SignUpDelegateTest.m in Sources */,
 				92D4CF0719CE2332004250A7 /* LogInAndSignUpHandlerTest.m in Sources */,
 				9290C50619B3528A00581CB6 /* SidexSideTests.m in Sources */,
 				92D4CF0D19D0C3CB004250A7 /* LogInDelegateTest.m in Sources */,
@@ -554,10 +584,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/zach/Downloads/parse-library-1.3.0",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
 				INFOPLIST_FILE = "SidexSide/SidexSide-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -571,10 +606,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/zach/Downloads/parse-library-1.3.0",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
 				INFOPLIST_FILE = "SidexSide/SidexSide-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -610,6 +650,7 @@
 					3.1/iOS,
 					/Volumes/OCMock,
 					3.1/iOS,
+					"$(PROJECT_DIR)/Libraries",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -649,6 +690,7 @@
 					3.1/iOS,
 					/Volumes/OCMock,
 					3.1/iOS,
+					"$(PROJECT_DIR)/Libraries",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

@@ -20,7 +20,7 @@
         _signUpDelegate = signUpDelegate;
         
         [_logInViewController setDelegate:_logInDelegate];
-        [_signUpViewController setDelegate:_signUpDelegate];
+        //[_signUpViewController setDelegate:_signUpDelegate];
         [_logInViewController setSignUpController:_signUpViewController];
         
         return self;

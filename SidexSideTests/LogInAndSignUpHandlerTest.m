@@ -1,5 +1,5 @@
 #import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
+#import "OCMock.h"
 #import "LogInAndSignUpHandler.h"
 #import "LogInDelegate.h"
 #import "SignUpDelegate.h"

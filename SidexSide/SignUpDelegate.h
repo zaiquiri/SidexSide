@@ -1,13 +1,13 @@
-//
-//  SignUpDelegate.h
-//  SidexSide
-//
-//  Created by zach on 9/19/14.
-//  Copyright (c) 2014 zappery. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
+#import "MissingInformationAlert.h"
+#import "MismatchPasswordAlert.h"
+#import "InvalidEmailAlert.h"
 
-@interface SignUpDelegate : NSObject
+@interface SignUpDelegate : NSObject <PFSignUpViewControllerDelegate>
+
+- (id)initWithMissingInformationAlert:(MissingInformationAlert *)missingInfoAlert
+                mismatchPasswordAlert:(MismatchPasswordAlert *)mismatchPasswordAlert
+                    invalidEmailAlert:(InvalidEmailAlert *)invalidEmailAlert;
 
 @end

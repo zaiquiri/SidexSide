@@ -40,5 +40,4 @@
     [logInController.parentViewController.navigationController popViewControllerAnimated:YES];
 }
 
-
 @end

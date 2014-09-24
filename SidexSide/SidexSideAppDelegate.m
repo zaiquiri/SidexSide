@@ -7,6 +7,7 @@
 #import "SignUpDelegate.h"
 #import "HomeViewController.h"
 #import "SidexSidePFUser.h"
+#import "MismatchPasswordAlert.h"
 
 @implementation SidexSideAppDelegate
 
@@ -15,11 +16,17 @@
     [Parse setApplicationId:@"xMsrdzqyWstkeR2tiGr0xaMNso6Qhl8lTfSJO2QS"
                   clientKey:@"hEiLNnGFjDOu62b0cIKRqLJGgp9FjN7GyDSNLODF"];
     
-    SidexSideLoginViewController *logInViewController = [[SidexSideLoginViewController alloc] init];
-    SidexSideSignUpViewController *signUpViewController = [[SidexSideSignUpViewController alloc] init];
+    
+
     MissingInformationAlert *missingInfoAlert = [[MissingInformationAlert alloc] init];
+    MismatchPasswordAlert *mismatchPasswordAlert = [[MismatchPasswordAlert alloc] init];
+    InvalidEmailAlert *invalidEmailAlert = [[InvalidEmailAlert alloc] init];
     LogInDelegate *logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert];
-    SignUpDelegate *signUpDelegate =[[SignUpDelegate alloc] init];
+    SignUpDelegate *signUpDelegate =[[SignUpDelegate alloc] initWithMissingInformationAlert:missingInfoAlert mismatchPasswordAlert:mismatchPasswordAlert invalidEmailAlert:invalidEmailAlert];
+    
+    SidexSideSignUpViewController *signUpViewController = [[SidexSideSignUpViewController alloc] init];
+    [signUpViewController setDelegate:signUpDelegate];
+    SidexSideLoginViewController *logInViewController = [[SidexSideLoginViewController alloc] init];
     
     LogInAndSignUpHandler *logInAndSignUpHandler = [[LogInAndSignUpHandler alloc] initWithLogInViewController:logInViewController signUpViewController:signUpViewController logInDelegate:logInDelegate signUpDelegate:signUpDelegate];
     
