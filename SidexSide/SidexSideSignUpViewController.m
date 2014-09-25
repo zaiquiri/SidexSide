@@ -11,6 +11,7 @@
 }
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     self.signUpView.usernameField.placeholder = @"Email";
     self.signUpView.additionalField.placeholder = @"Confirm Password";
 }

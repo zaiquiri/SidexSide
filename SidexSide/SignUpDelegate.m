@@ -56,6 +56,10 @@ static NSString *const emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z
     NSLog(@"Failed to sign up");
 }
 
+- (void)signUpViewControllerDidCancelSignUp:(PFSignUpViewController *)signUpController {
+    [signUpController.parentViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (BOOL)informationIsComplete:(NSDictionary *)info {
     BOOL informationComplete = YES;
     for (id key in info) {

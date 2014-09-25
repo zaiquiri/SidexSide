@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		926B4AFA19D4693F00439EDB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF819D4693F00439EDB /* Bolts.framework */; };
+		926B4AFB19D4693F00439EDB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF919D4693F00439EDB /* Parse.framework */; };
 		9290C4DB19B3528A00581CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DA19B3528A00581CB6 /* Foundation.framework */; };
 		9290C4DD19B3528A00581CB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */; };
 		9290C4DF19B3528A00581CB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DE19B3528A00581CB6 /* UIKit.framework */; };
@@ -44,8 +46,6 @@
 		92D4CF1019D1E623004250A7 /* MissingInformationAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */; };
 		92D4CF1619D2468C004250A7 /* SignUpDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF1519D2468C004250A7 /* SignUpDelegateTest.m */; };
 		92D4CF1919D26A8B004250A7 /* MismatchPasswordAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF1819D26A8B004250A7 /* MismatchPasswordAlert.m */; };
-		92D4CF1B19D31C16004250A7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CF1A19D31C16004250A7 /* Parse.framework */; };
-		92D4CF1D19D31F60004250A7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CF1C19D31F60004250A7 /* Bolts.framework */; };
 		92D4CF1F19D32A86004250A7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CF1E19D32A86004250A7 /* libOCMock.a */; };
 		92D4CF2019D32AAE004250A7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D4CF1E19D32A86004250A7 /* libOCMock.a */; };
 		92D4CF2319D32FA2004250A7 /* InvalidEmailAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D4CF2219D32FA2004250A7 /* InvalidEmailAlert.m */; };
@@ -62,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		926B4AF519D4688D00439EDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
+		926B4AF819D4693F00439EDB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.4.1/Bolts.framework"; sourceTree = "<group>"; };
+		926B4AF919D4693F00439EDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.4.1/Parse.framework"; sourceTree = "<group>"; };
 		9290C4D719B3528A00581CB6 /* SidexSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidexSide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9290C4DA19B3528A00581CB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,7 +82,6 @@
 		9290C50119B3528A00581CB6 /* SidexSideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SidexSideTests-Info.plist"; sourceTree = "<group>"; };
 		9290C50319B3528A00581CB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9290C50519B3528A00581CB6 /* SidexSideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidexSideTests.m; sourceTree = "<group>"; };
-		92D4CEA019C939B9004250A7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		92D4CEA419C939E4004250A7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		92D4CEA619C939ED004250A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		92D4CEA819C939F4004250A7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -122,8 +124,6 @@
 		92D4CF1519D2468C004250A7 /* SignUpDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpDelegateTest.m; sourceTree = "<group>"; };
 		92D4CF1719D26A8B004250A7 /* MismatchPasswordAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MismatchPasswordAlert.h; sourceTree = "<group>"; };
 		92D4CF1819D26A8B004250A7 /* MismatchPasswordAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MismatchPasswordAlert.m; sourceTree = "<group>"; };
-		92D4CF1A19D31C16004250A7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.3.0/Parse.framework"; sourceTree = "<group>"; };
-		92D4CF1C19D31F60004250A7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.3.0/Bolts.framework"; sourceTree = "<group>"; };
 		92D4CF1E19D32A86004250A7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		92D4CF2119D32FA2004250A7 /* InvalidEmailAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvalidEmailAlert.h; sourceTree = "<group>"; };
 		92D4CF2219D32FA2004250A7 /* InvalidEmailAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvalidEmailAlert.m; sourceTree = "<group>"; };
@@ -134,9 +134,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D4CF1D19D31F60004250A7 /* Bolts.framework in Frameworks */,
+				926B4AFA19D4693F00439EDB /* Bolts.framework in Frameworks */,
+				926B4AFB19D4693F00439EDB /* Parse.framework in Frameworks */,
 				92D4CF1F19D32A86004250A7 /* libOCMock.a in Frameworks */,
-				92D4CF1B19D31C16004250A7 /* Parse.framework in Frameworks */,
 				92D4CEB919C93A51004250A7 /* SystemConfiguration.framework in Frameworks */,
 				92D4CEB719C93A47004250A7 /* StoreKit.framework in Frameworks */,
 				92D4CEB519C93A3B004250A7 /* Social.framework in Frameworks */,
@@ -191,8 +191,9 @@
 		9290C4D919B3528A00581CB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				92D4CF1C19D31F60004250A7 /* Bolts.framework */,
-				92D4CF1A19D31C16004250A7 /* Parse.framework */,
+				926B4AF819D4693F00439EDB /* Bolts.framework */,
+				926B4AF919D4693F00439EDB /* Parse.framework */,
+				926B4AF519D4688D00439EDB /* Parse.framework */,
 				92D4CEB819C93A51004250A7 /* SystemConfiguration.framework */,
 				92D4CEB619C93A47004250A7 /* StoreKit.framework */,
 				92D4CEB419C93A3B004250A7 /* Social.framework */,
@@ -204,7 +205,6 @@
 				92D4CEA819C939F4004250A7 /* CFNetwork.framework */,
 				92D4CEA619C939ED004250A7 /* AudioToolbox.framework */,
 				92D4CEA419C939E4004250A7 /* Accounts.framework */,
-				92D4CEA019C939B9004250A7 /* Bolts.framework */,
 				9290C4DA19B3528A00581CB6 /* Foundation.framework */,
 				9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */,
 				9290C4DE19B3528A00581CB6 /* UIKit.framework */,
@@ -216,6 +216,7 @@
 		9290C4E019B3528A00581CB6 /* SidexSide */ = {
 			isa = PBXGroup;
 			children = (
+				92D4CF2419D462C6004250A7 /* Alerts */,
 				92D4CF0919D065E8004250A7 /* LoginSignup */,
 				92D4CF0819D065C0004250A7 /* ParseWrappers */,
 				92D4CEF419CC9482004250A7 /* Controllers */,
@@ -224,12 +225,6 @@
 				9290C4EC19B3528A00581CB6 /* Main.storyboard */,
 				9290C4F219B3528A00581CB6 /* Images.xcassets */,
 				9290C4E119B3528A00581CB6 /* Supporting Files */,
-				92D4CF0E19D1E623004250A7 /* MissingInformationAlert.h */,
-				92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */,
-				92D4CF1719D26A8B004250A7 /* MismatchPasswordAlert.h */,
-				92D4CF1819D26A8B004250A7 /* MismatchPasswordAlert.m */,
-				92D4CF2119D32FA2004250A7 /* InvalidEmailAlert.h */,
-				92D4CF2219D32FA2004250A7 /* InvalidEmailAlert.m */,
 			);
 			path = SidexSide;
 			sourceTree = "<group>";
@@ -341,6 +336,19 @@
 				92D4CF1519D2468C004250A7 /* SignUpDelegateTest.m */,
 			);
 			name = LoginSignup;
+			sourceTree = "<group>";
+		};
+		92D4CF2419D462C6004250A7 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				92D4CF0E19D1E623004250A7 /* MissingInformationAlert.h */,
+				92D4CF0F19D1E623004250A7 /* MissingInformationAlert.m */,
+				92D4CF1719D26A8B004250A7 /* MismatchPasswordAlert.h */,
+				92D4CF1819D26A8B004250A7 /* MismatchPasswordAlert.m */,
+				92D4CF2119D32FA2004250A7 /* InvalidEmailAlert.h */,
+				92D4CF2219D32FA2004250A7 /* InvalidEmailAlert.m */,
+			);
+			name = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -585,6 +593,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"/Users/zach/Downloads/parse-library-1.3.0",
+					"/Users/zach/Downloads/parse-library-1.4.1",
+					/Users/zach/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
@@ -607,6 +617,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"/Users/zach/Downloads/parse-library-1.3.0",
+					"/Users/zach/Downloads/parse-library-1.4.1",
+					/Users/zach/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
