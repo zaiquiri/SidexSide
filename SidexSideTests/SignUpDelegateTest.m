@@ -148,4 +148,12 @@
     OCMVerify([user saveInBackground]);
 }
 
+- (void)testShouldClearConfirmPasswordFieldBeforeSigningUpUser {
+    id user = OCMClassMock([PFUser class]);
+    
+    [signUpDelegate signUpViewController:signUpViewController didSignUpUser:user];
+    
+    OCMVerify([user setValue:@"" forKey:@"additional"]);
+}
+
 @end
