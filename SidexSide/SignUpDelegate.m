@@ -48,6 +48,7 @@ static NSString *const emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z
 
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
     [signUpController.parentViewController dismissViewControllerAnimated:YES completion:nil];
+    [user setValue:@"" forKey:@"additional"];
     [user setEmail:email];
     [user saveInBackground];
 }

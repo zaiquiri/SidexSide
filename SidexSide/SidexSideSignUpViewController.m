@@ -14,6 +14,7 @@
     [super viewDidLoad];
     self.signUpView.usernameField.placeholder = @"Email";
     self.signUpView.additionalField.placeholder = @"Confirm Password";
+    self.signUpView.additionalField.secureTextEntry = YES;
     
     [self.signUpView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]]];
 
