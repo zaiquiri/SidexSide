@@ -48,7 +48,7 @@
     [[mismatchPasswordAlert reject] show];
     [[invalidEmailAlert reject] show];
     
-    NSDictionary *info = [[NSDictionary alloc] initWithObjectsAndKeys:username, @"username", password, @"password", password, @"additionalField", nil];
+    NSDictionary *info = [[NSDictionary alloc] initWithObjectsAndKeys:username, @"username", password, @"password", password, @"additional", nil];
     
     BOOL shouldBeginSignUp = [signUpDelegate signUpViewController:signUpViewController shouldBeginSignUp:info];
     
@@ -118,7 +118,7 @@
     [[missingInfoAlert reject] show];
     [[mismatchPasswordAlert reject] show];
     
-    NSDictionary *info = [[NSDictionary alloc] initWithObjectsAndKeys: @"invalid-email", @"username", password, @"password", password, @"additionalField", nil];
+    NSDictionary *info = [[NSDictionary alloc] initWithObjectsAndKeys: @"invalid-email", @"username", password, @"password", password, @"additional", nil];
     
     BOOL shouldBeginSignUp = [signUpDelegate signUpViewController:signUpViewController shouldBeginSignUp:info];
     
@@ -139,7 +139,7 @@
 
 - (void)testShouldSetUsersEmailFromUsernameValueWhenSignUpWasSuccessful {
     id user = OCMClassMock([PFUser class]);
-    NSDictionary *info = [[NSDictionary alloc] initWithObjectsAndKeys:username, @"username", password, @"password", password, @"additionalField", nil];
+    NSDictionary *info = [[NSDictionary alloc] initWithObjectsAndKeys:username, @"username", password, @"password", password, @"additional", nil];
    
     [signUpDelegate signUpViewController:signUpViewController shouldBeginSignUp:info];
     [signUpDelegate signUpViewController:signUpViewController didSignUpUser:user];
