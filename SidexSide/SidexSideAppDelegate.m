@@ -24,6 +24,8 @@
     MismatchPasswordAlert *mismatchPasswordAlert = [[MismatchPasswordAlert alloc] init];
     InvalidEmailAlert *invalidEmailAlert = [[InvalidEmailAlert alloc] init];
     
+    UserManager *userManager = [[UserManager alloc] init];
+    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UINavigationController *createProfileController = [storyboard instantiateViewControllerWithIdentifier:@"createProfileNavigationController"];
     HeadshotSelectionViewController *headshotSelectionController = createProfileController.viewControllers[0];
@@ -35,9 +37,15 @@
     
     headshotSelectionController.imagePickerController = headshotImagePicker;
     headshotSelectionController.imageResizer = [[ImageResizer alloc] init];
+    headshotSelectionController.userManager = userManager;
     
-    LogInDelegate *logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert createProfileController:createProfileController];
-    SignUpDelegate *signUpDelegate =[[SignUpDelegate alloc] initWithMissingInformationAlert:missingInfoAlert mismatchPasswordAlert:mismatchPasswordAlert invalidEmailAlert:invalidEmailAlert];
+    LogInDelegate *logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert
+                                                                  createProfileController:createProfileController
+                                                                              userManager:userManager];
+    
+    SignUpDelegate *signUpDelegate =[[SignUpDelegate alloc] initWithMissingInformationAlert:missingInfoAlert
+                                                                      mismatchPasswordAlert:mismatchPasswordAlert
+                                                                          invalidEmailAlert:invalidEmailAlert];
     
     SidexSideSignUpViewController *signUpViewController = [[SidexSideSignUpViewController alloc] init];
     [signUpViewController setDelegate:signUpDelegate];

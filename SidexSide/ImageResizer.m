@@ -2,7 +2,13 @@
 
 @implementation ImageResizer
 
-- (UIImage *) resizeImage:(UIImage *)originalImage toSize:(CGSize)size {
+- (UIImage *) resizeImage:(UIImage *)originalImage forRect:(CGRect)rect {
+    
+    CGFloat horizontalRatio = rect.size.width / originalImage.size.width;
+    CGFloat verticalRatio = rect.size.height / originalImage.size.height;
+    CGFloat ratio = MIN(horizontalRatio, verticalRatio);
+    
+    CGSize size = CGSizeMake(originalImage.size.width * ratio, originalImage.size.height * ratio);
     
     CGImageRef imageRef = originalImage.CGImage;
     CGRect newRect = CGRectIntegral(CGRectMake(0, 0, size.width, size.height));

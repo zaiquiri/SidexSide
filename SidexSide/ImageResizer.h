@@ -2,6 +2,6 @@
 
 @interface ImageResizer : NSObject
 
-- (UIImage *)resizeImage:(UIImage *)originalImage toSize:(CGSize)size;
+- (UIImage *)resizeImage:(UIImage *)originalImage forRect:(CGRect)rect;
 
 @end

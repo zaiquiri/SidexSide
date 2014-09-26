@@ -11,7 +11,6 @@
 		926B4AFB19D4693F00439EDB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF919D4693F00439EDB /* Parse.framework */; };
 		926B4AFD19D474F500439EDB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 926B4AFC19D474F500439EDB /* logo.png */; };
 		926B4B0019D505A000439EDB /* HeadshotSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4AFF19D505A000439EDB /* HeadshotSelectionViewController.m */; };
-		926B4B0919D50BBB00439EDB /* HeadshotPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B0819D50BBB00439EDB /* HeadshotPicker.m */; };
 		926B4B0E19D5D06400439EDB /* ImageResizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B0D19D5D06400439EDB /* ImageResizer.m */; };
 		926B4B1019D5D19800439EDB /* HeadshotSelectionViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B0F19D5D19800439EDB /* HeadshotSelectionViewControllerTest.m */; };
 		926B4B1219D5D1AA00439EDB /* ImageResizerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B1119D5D1AA00439EDB /* ImageResizerTest.m */; };
@@ -76,8 +75,6 @@
 		926B4AFC19D474F500439EDB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = assets/logo.png; sourceTree = "<group>"; };
 		926B4AFE19D505A000439EDB /* HeadshotSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadshotSelectionViewController.h; sourceTree = "<group>"; };
 		926B4AFF19D505A000439EDB /* HeadshotSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadshotSelectionViewController.m; sourceTree = "<group>"; };
-		926B4B0719D50BBB00439EDB /* HeadshotPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadshotPicker.h; sourceTree = "<group>"; };
-		926B4B0819D50BBB00439EDB /* HeadshotPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadshotPicker.m; sourceTree = "<group>"; };
 		926B4B0C19D5D06400439EDB /* ImageResizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResizer.h; sourceTree = "<group>"; };
 		926B4B0D19D5D06400439EDB /* ImageResizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResizer.m; sourceTree = "<group>"; };
 		926B4B0F19D5D19800439EDB /* HeadshotSelectionViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadshotSelectionViewControllerTest.m; sourceTree = "<group>"; };
@@ -246,8 +243,6 @@
 				9290C4EC19B3528A00581CB6 /* Main.storyboard */,
 				9290C4F219B3528A00581CB6 /* Images.xcassets */,
 				9290C4E119B3528A00581CB6 /* Supporting Files */,
-				926B4B0719D50BBB00439EDB /* HeadshotPicker.h */,
-				926B4B0819D50BBB00439EDB /* HeadshotPicker.m */,
 				926B4B0C19D5D06400439EDB /* ImageResizer.h */,
 				926B4B0D19D5D06400439EDB /* ImageResizer.m */,
 				926B4B1319D5E12900439EDB /* UserManager.h */,
@@ -491,7 +486,6 @@
 				926B4B0019D505A000439EDB /* HeadshotSelectionViewController.m in Sources */,
 				92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */,
 				92D4CF2319D32FA2004250A7 /* InvalidEmailAlert.m in Sources */,
-				926B4B0919D50BBB00439EDB /* HeadshotPicker.m in Sources */,
 				92D4CEE719C9F10C004250A7 /* SidexSideSignUpViewController.m in Sources */,
 				92D4CEFD19CC9CE5004250A7 /* SidexSidePFUser.m in Sources */,
 				92D4CF1919D26A8B004250A7 /* MismatchPasswordAlert.m in Sources */,

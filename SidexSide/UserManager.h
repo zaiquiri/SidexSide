@@ -3,5 +3,6 @@
 @interface UserManager : NSObject
 
 - (void)saveHeadshot:(UIImage *)headshot;
+- (BOOL)profileIsComplete;
 
 @end
