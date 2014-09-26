@@ -130,7 +130,7 @@
 
 - (void)testShouldDismissSignUpViewControllerWhenUserHasSignedUpSuccesfully {
     id parentViewController = OCMClassMock([UIViewController class]);
-    OCMStub([signUpViewController parentViewController]).andReturn(parentViewController);
+    OCMStub([signUpViewController presentingViewController]).andReturn(parentViewController);
     
     [signUpDelegate signUpViewController:signUpViewController didSignUpUser:[PFUser currentUser]];
     
