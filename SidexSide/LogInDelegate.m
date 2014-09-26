@@ -2,15 +2,18 @@
 
 @interface LogInDelegate()
 @property (strong, nonatomic) MissingInformationAlert *missingInfoAlert;
+@property (strong, nonatomic) UIViewController *createProfileController;
 @end
 
 @implementation LogInDelegate
 
 @synthesize missingInfoAlert;
 
-- (id)initWithMissingInformationAlert:(MissingInformationAlert *)missingInfoAlert {
+- (id)initWithMissingInformationAlert:(MissingInformationAlert *)missingInfoAlert
+              createProfileController:(UINavigationController *)createProfileController{
     if (self = [super init]) {
         self.missingInfoAlert = missingInfoAlert;
+        self.createProfileController = createProfileController;
         return self;
     }
     return nil;
@@ -29,7 +32,18 @@
 }
 
 - (void) logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
-    [logInController.parentViewController dismissViewControllerAnimated:YES completion:nil];
+    UIViewController *presentingViewController = logInController.presentingViewController;
+    
+    [presentingViewController dismissViewControllerAnimated:YES completion:^{
+        if ([self profileIsIncomplete]){
+            [presentingViewController presentViewController:self.createProfileController animated:YES completion:nil];
+        }
+    }];
+}
+
+- (BOOL)profileIsIncomplete {
+    return ![[PFUser currentUser] objectForKey:@"profileComplete"]
+                || [[PFUser currentUser] objectForKey:@"profileComplete"] == [NSNumber numberWithBool:NO];
 }
 
 - (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {

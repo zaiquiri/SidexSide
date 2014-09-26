@@ -7,6 +7,7 @@
 
 - (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password;
 
-- (id)initWithMissingInformationAlert:(MissingInformationAlert *) missingInfoAlert;
+- (id)initWithMissingInformationAlert:(MissingInformationAlert *) missingInfoAlert
+              createProfileController:(UIViewController *)createProfileController;
 
 @end

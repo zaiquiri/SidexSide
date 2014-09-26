@@ -23,7 +23,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NsE-cI-NKu">
             <objects>
-                <navigationController definesPresentationContext="YES" id="CBi-tf-XQ7" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="createProfileNavigationController" definesPresentationContext="YES" id="CBi-tf-XQ7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ffO-rr-VRG">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -64,12 +64,16 @@
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveAndContinue" destination="dOa-e2-kMJ" eventType="touchUpInside" id="65h-OI-gv0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Your Profile" id="Kbc-UF-mem"/>
                     <connections>
+                        <outlet property="continueButton" destination="Tr7-zk-ZTj" id="sx9-r3-rZx"/>
                         <outlet property="headshotDisplay" destination="Iub-Yy-iVT" id="AW1-bt-J2i"/>
                     </connections>
                 </viewController>

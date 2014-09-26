@@ -1,13 +1,10 @@
-//
-//  HeadshotSelectionViewController.h
-//  SidexSide
-//
-//  Created by zach on 9/25/14.
-//  Copyright (c) 2014 zappery. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "HeadshotPicker.h"
+#import "ImageResizer.h"
 
-@interface HeadshotSelectionViewController : UIViewController
+@interface HeadshotSelectionViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property (strong, nonatomic) UIImagePickerController *imagePickerController;
+@property (strong, nonatomic) ImageResizer *imageResizer;
 
 @end

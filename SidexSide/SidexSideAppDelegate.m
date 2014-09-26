@@ -8,6 +8,8 @@
 #import "HomeViewController.h"
 #import "SidexSidePFUser.h"
 #import "MismatchPasswordAlert.h"
+#import "HeadshotSelectionViewController.h"
+#import "ImageResizer.h"
 
 @implementation SidexSideAppDelegate
 
@@ -21,7 +23,20 @@
     MissingInformationAlert *missingInfoAlert = [[MissingInformationAlert alloc] init];
     MismatchPasswordAlert *mismatchPasswordAlert = [[MismatchPasswordAlert alloc] init];
     InvalidEmailAlert *invalidEmailAlert = [[InvalidEmailAlert alloc] init];
-    LogInDelegate *logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController *createProfileController = [storyboard instantiateViewControllerWithIdentifier:@"createProfileNavigationController"];
+    HeadshotSelectionViewController *headshotSelectionController = createProfileController.viewControllers[0];
+    
+    UIImagePickerController *headshotImagePicker = [[UIImagePickerController alloc] init];
+    headshotImagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    headshotImagePicker.allowsEditing = NO;
+    headshotImagePicker.delegate = headshotSelectionController;
+    
+    headshotSelectionController.imagePickerController = headshotImagePicker;
+    headshotSelectionController.imageResizer = [[ImageResizer alloc] init];
+    
+    LogInDelegate *logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert createProfileController:createProfileController];
     SignUpDelegate *signUpDelegate =[[SignUpDelegate alloc] initWithMissingInformationAlert:missingInfoAlert mismatchPasswordAlert:mismatchPasswordAlert invalidEmailAlert:invalidEmailAlert];
     
     SidexSideSignUpViewController *signUpViewController = [[SidexSideSignUpViewController alloc] init];
