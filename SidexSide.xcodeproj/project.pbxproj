@@ -13,9 +13,7 @@
 		926B4B0019D505A000439EDB /* HeadshotSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4AFF19D505A000439EDB /* HeadshotSelectionViewController.m */; };
 		926B4B0E19D5D06400439EDB /* ImageResizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B0D19D5D06400439EDB /* ImageResizer.m */; };
 		926B4B1019D5D19800439EDB /* HeadshotSelectionViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B0F19D5D19800439EDB /* HeadshotSelectionViewControllerTest.m */; };
-		926B4B1219D5D1AA00439EDB /* ImageResizerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B1119D5D1AA00439EDB /* ImageResizerTest.m */; };
 		926B4B1519D5E12900439EDB /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B1419D5E12900439EDB /* UserManager.m */; };
-		926B4B1719D5E13F00439EDB /* UserManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B1619D5E13F00439EDB /* UserManagerTest.m */; };
 		9290C4DB19B3528A00581CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DA19B3528A00581CB6 /* Foundation.framework */; };
 		9290C4DD19B3528A00581CB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */; };
 		9290C4DF19B3528A00581CB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DE19B3528A00581CB6 /* UIKit.framework */; };
@@ -78,10 +76,8 @@
 		926B4B0C19D5D06400439EDB /* ImageResizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResizer.h; sourceTree = "<group>"; };
 		926B4B0D19D5D06400439EDB /* ImageResizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResizer.m; sourceTree = "<group>"; };
 		926B4B0F19D5D19800439EDB /* HeadshotSelectionViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadshotSelectionViewControllerTest.m; sourceTree = "<group>"; };
-		926B4B1119D5D1AA00439EDB /* ImageResizerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResizerTest.m; sourceTree = "<group>"; };
 		926B4B1319D5E12900439EDB /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
 		926B4B1419D5E12900439EDB /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
-		926B4B1619D5E13F00439EDB /* UserManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManagerTest.m; sourceTree = "<group>"; };
 		9290C4D719B3528A00581CB6 /* SidexSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidexSide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9290C4DA19B3528A00581CB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -269,8 +265,6 @@
 				92D4CF1319D20B5E004250A7 /* Controllers */,
 				9290C50019B3528A00581CB6 /* Supporting Files */,
 				9290C50519B3528A00581CB6 /* SidexSideTests.m */,
-				926B4B1119D5D1AA00439EDB /* ImageResizerTest.m */,
-				926B4B1619D5E13F00439EDB /* UserManagerTest.m */,
 			);
 			path = SidexSideTests;
 			sourceTree = "<group>";
@@ -501,11 +495,9 @@
 			files = (
 				92D4CF1619D2468C004250A7 /* SignUpDelegateTest.m in Sources */,
 				926B4B1019D5D19800439EDB /* HeadshotSelectionViewControllerTest.m in Sources */,
-				926B4B1219D5D1AA00439EDB /* ImageResizerTest.m in Sources */,
 				92D4CF0719CE2332004250A7 /* LogInAndSignUpHandlerTest.m in Sources */,
 				9290C50619B3528A00581CB6 /* SidexSideTests.m in Sources */,
 				92D4CF0D19D0C3CB004250A7 /* LogInDelegateTest.m in Sources */,
-				926B4B1719D5E13F00439EDB /* UserManagerTest.m in Sources */,
 				92D4CEFF19CCA76C004250A7 /* HomeViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
