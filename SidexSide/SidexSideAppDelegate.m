@@ -10,6 +10,7 @@
 #import "MismatchPasswordAlert.h"
 #import "HeadshotSelectionViewController.h"
 #import "ImageResizer.h"
+#import "BasicProfileDetailsViewController.h"
 
 @implementation SidexSideAppDelegate
 

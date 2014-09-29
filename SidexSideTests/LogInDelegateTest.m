@@ -38,8 +38,6 @@
     logInDelegate = [[LogInDelegate alloc] initWithMissingInformationAlert:missingInfoAlert
                                                    createProfileController:createProfileController
                                                                userManager:userManager];
-
-    
 }
 
 - (void)tearDown
@@ -91,16 +89,15 @@
 
 //- (void)testShouldDismissLogInViewControllerWhenUserSignsInSuccesfully {
 //    PFUser *user = [[PFUser alloc] init];
+//    OCMStub([userManager profileIsComplete]).andReturn(NO);
 //    id homeViewController = OCMClassMock([UIViewController class]);
 //    OCMStub([logInViewController presentingViewController]).andReturn(homeViewController);
 //    
 //    [logInDelegate logInViewController:logInViewController didLogInUser:user];
 //    
-//    OCMVerify([homeViewController dismissViewControllerAnimated:YES completion:^{
-//        if (![userManager profileIsComplete]){
-//            [homeViewController presentViewController:createProfileController animated:YES completion:nil];
-//        }
-//    }]);
+//    OCMVerify([homeViewController presentViewController:createProfileController animated:YES completion:nil]);
+//    
+//    OCMVerify([homeViewController dismissViewControllerAnimated:YES completion:nil]);
 //}
 
 - (void)testShouldDismissLogInViewWhenUserCancelsLogIn {

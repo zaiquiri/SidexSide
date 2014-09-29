@@ -14,6 +14,7 @@
 		926B4B0E19D5D06400439EDB /* ImageResizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B0D19D5D06400439EDB /* ImageResizer.m */; };
 		926B4B1019D5D19800439EDB /* HeadshotSelectionViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B0F19D5D19800439EDB /* HeadshotSelectionViewControllerTest.m */; };
 		926B4B1519D5E12900439EDB /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B1419D5E12900439EDB /* UserManager.m */; };
+		926B4B1A19D72FC800439EDB /* BasicProfileDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4B1919D72FC800439EDB /* BasicProfileDetailsViewController.m */; };
 		9290C4DB19B3528A00581CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DA19B3528A00581CB6 /* Foundation.framework */; };
 		9290C4DD19B3528A00581CB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */; };
 		9290C4DF19B3528A00581CB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290C4DE19B3528A00581CB6 /* UIKit.framework */; };
@@ -78,6 +79,8 @@
 		926B4B0F19D5D19800439EDB /* HeadshotSelectionViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadshotSelectionViewControllerTest.m; sourceTree = "<group>"; };
 		926B4B1319D5E12900439EDB /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
 		926B4B1419D5E12900439EDB /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		926B4B1819D72FC800439EDB /* BasicProfileDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicProfileDetailsViewController.h; sourceTree = "<group>"; };
+		926B4B1919D72FC800439EDB /* BasicProfileDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicProfileDetailsViewController.m; sourceTree = "<group>"; };
 		9290C4D719B3528A00581CB6 /* SidexSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidexSide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9290C4DA19B3528A00581CB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9290C4DC19B3528A00581CB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -243,6 +246,8 @@
 				926B4B0D19D5D06400439EDB /* ImageResizer.m */,
 				926B4B1319D5E12900439EDB /* UserManager.h */,
 				926B4B1419D5E12900439EDB /* UserManager.m */,
+				926B4B1819D72FC800439EDB /* BasicProfileDetailsViewController.h */,
+				926B4B1919D72FC800439EDB /* BasicProfileDetailsViewController.m */,
 			);
 			path = SidexSide;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				9290C4EB19B3528A00581CB6 /* SidexSideAppDelegate.m in Sources */,
 				92D4CF1019D1E623004250A7 /* MissingInformationAlert.m in Sources */,
 				92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */,
+				926B4B1A19D72FC800439EDB /* BasicProfileDetailsViewController.m in Sources */,
 				926B4B0019D505A000439EDB /* HeadshotSelectionViewController.m in Sources */,
 				92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */,
 				92D4CF2319D32FA2004250A7 /* InvalidEmailAlert.m in Sources */,

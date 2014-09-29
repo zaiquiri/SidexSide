@@ -1,5 +1,6 @@
 #import "HeadshotSelectionViewController.h"
 #import <Parse/Parse.h>
+#import "BasicProfileDetailsViewController.h"
 
 @interface HeadshotSelectionViewController()
 @property (strong, nonatomic) IBOutlet UIImageView *headshotDisplay;
@@ -45,6 +46,11 @@
 
 - (void) imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    BasicProfileDetailsViewController *destinationViewController = (BasicProfileDetailsViewController *) segue.destinationViewController;
+    destinationViewController.userManager = userManager;
 }
 
 @end
