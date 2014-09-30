@@ -29,7 +29,7 @@
     id pfUser = OCMClassMock([SidexSidePFUser class]);
     OCMStub([pfUser currentUser]).andReturn(nil);
     id logInAndSignUpHandler = OCMClassMock([LogInAndSignUpHandler class]);
-    homeViewController.pfUser = pfUser;
+    homeViewController.userManager = pfUser;
     homeViewController.logInAndSignUpHandler = logInAndSignUpHandler;
     
     [homeViewController viewDidAppear:true];

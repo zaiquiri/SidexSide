@@ -24,6 +24,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ProjectTypeSelectionViewController *destinationViewController = (ProjectTypeSelectionViewController *)segue.destinationViewController;
     destinationViewController.pickerDelegateDataSource = projectTypeDelegateDataSource;
+    destinationViewController.selectedGender = selectedGender;
+    destinationViewController.selectedAge = [pickerDelegateDataSource selectedAge];
 }
 
 @end
