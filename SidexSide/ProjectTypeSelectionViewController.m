@@ -1,4 +1,5 @@
 #import "ProjectTypeSelectionViewController.h"
+#import "ReviewBreakdownViewController.h"
 
 @interface ProjectTypeSelectionViewController()
 
@@ -10,11 +11,22 @@
 
 @synthesize pickerDelegateDataSource;
 @synthesize picker;
+@synthesize selectedAge;
+@synthesize selectedGender;
+@synthesize userFinder;
 
 - (void)viewDidLoad {
     self.picker.delegate = pickerDelegateDataSource;
     self.picker.dataSource = pickerDelegateDataSource;
     [self.picker selectRow:[pickerDelegateDataSource defaultSelection] inComponent:0 animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ReviewBreakdownViewController *destinationViewController = (ReviewBreakdownViewController *)segue.destinationViewController;
+    destinationViewController.selectedGender = selectedGender;
+    destinationViewController.selectedAge = selectedAge;
+    destinationViewController.selectedProjectType = [pickerDelegateDataSource selectedProjectType];
+    destinationViewController.userFinder = userFinder;
 }
 
 @end

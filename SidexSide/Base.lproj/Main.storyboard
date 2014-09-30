@@ -352,6 +352,40 @@
             </objects>
             <point key="canvasLocation" x="169" y="16"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kOd-lK-jS3">
+            <objects>
+                <navigationController storyboardIdentifier="CastingNavigationController" definesPresentationContext="YES" id="UXT-Ti-E4D" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yL5-4S-NIT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BAM-JG-Xbf" kind="relationship" relationship="rootViewController" id="xe6-BD-Mf4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTY-Vz-jNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-244" y="700"/>
+        </scene>
+        <!--View Controller - We found you a scene partner!-->
+        <scene sceneID="Y6Y-iM-ngf">
+            <objects>
+                <viewController id="BAM-JG-Xbf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fhz-I5-thz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fee-Hi-tro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ef2-V7-U8O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="We found you a scene partner!" id="UHY-SI-y8u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAu-9M-X3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="700"/>
+        </scene>
         <!--Age Selection View Controller - Create a Breakdown-->
         <scene sceneID="HiI-U7-lQ7">
             <objects>
@@ -440,10 +474,10 @@
             </objects>
             <point key="canvasLocation" x="978" y="16"/>
         </scene>
-        <!--View Controller - Review your Breakdown-->
+        <!--Review Breakdown View Controller - Review your Breakdown-->
         <scene sceneID="JpD-1T-lfe">
             <objects>
-                <viewController id="SUo-JL-sry" sceneMemberID="viewController">
+                <viewController id="SUo-JL-sry" customClass="ReviewBreakdownViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vsp-1y-zSV"/>
                         <viewControllerLayoutGuide type="bottom" id="SPQ-Ej-mkj"/>
@@ -458,8 +492,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[breakdown]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRD-J2-V2W">
-                                <rect key="frame" x="57" y="229" width="206" height="110"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seeking a [gender] scene partner around [age] years of age to read with me for a [project type] project." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="252" translatesAutoresizingMaskIntoConstraints="NO" id="lRD-J2-V2W">
+                                <rect key="frame" x="34" y="229" width="252" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -470,11 +504,17 @@
                                 <state key="normal" title="YES!  SEND OUT MY BREAKDOWN">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendBreakdown:" destination="SUo-JL-sry" eventType="touchUpInside" id="276-gc-boG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Review your Breakdown" id="cmM-oQ-MtX"/>
+                    <connections>
+                        <outlet property="breakdown" destination="lRD-J2-V2W" id="rdK-ft-5sL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mc-Dt-zDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

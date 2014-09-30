@@ -14,6 +14,7 @@
 @synthesize pickerDelegateDataSource;
 @synthesize agePickerDelegateDataSource;
 @synthesize projectTypeDelegateDataSource;
+@synthesize userFinder;
 
 - (void)viewDidLoad {
     picker.delegate = pickerDelegateDataSource;
@@ -37,6 +38,7 @@
     destinationViewController.selectedGender = pickerDelegateDataSource.selectedGender;
     destinationViewController.pickerDelegateDataSource = agePickerDelegateDataSource;
     destinationViewController.projectTypeDelegateDataSource = projectTypeDelegateDataSource;
+    destinationViewController.userFinder = userFinder;
 }
 
 @end

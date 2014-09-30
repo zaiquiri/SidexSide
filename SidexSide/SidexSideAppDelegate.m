@@ -15,6 +15,7 @@
 #import "AgePickerDelegateDataSource.h"
 #import "ProjectTypeDelegateDataSource.h"
 #import "ProjectTypeSelectionViewController.h"
+#import "UserFinder.h"
 
 @implementation SidexSideAppDelegate
 
@@ -75,6 +76,12 @@
     ProjectTypeDelegateDataSource *projectTypeDelegateDataSource = [[ProjectTypeDelegateDataSource alloc] initWithProjectTypes:@[@"Theatre", @"Film", @"Television", @"Voiceover"]];
     
     homeViewController.projectTypeDelegateDataSource = projectTypeDelegateDataSource;
+    
+    UINavigationController *castingNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"CastingNavigationController"];
+    
+    UserFinder *userFinder = [[UserFinder alloc] initWithCastingNavigationController:castingNavigationController];
+    
+    homeViewController.userFinder = userFinder;
     
     
     return YES;
