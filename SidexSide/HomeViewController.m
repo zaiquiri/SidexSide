@@ -1,4 +1,5 @@
 #import "HomeViewController.h"
+#import "AgeSelectionViewController.h"
 
 @interface HomeViewController()
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
@@ -11,6 +12,7 @@
 @synthesize logInAndSignUpHandler;
 @synthesize userManager;
 @synthesize pickerDelegateDataSource;
+@synthesize agePickerDelegateDataSource;
 
 - (void)viewDidLoad {
     picker.delegate = pickerDelegateDataSource;
@@ -27,6 +29,12 @@
 
 - (IBAction)logout {
     [userManager logout];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    AgeSelectionViewController *destinationViewController = (AgeSelectionViewController *)segue.destinationViewController;
+    destinationViewController.selectedGender = pickerDelegateDataSource.selectedGender;
+    destinationViewController.pickerDelegateDataSource = agePickerDelegateDataSource;
 }
 
 @end

@@ -352,10 +352,10 @@
             </objects>
             <point key="canvasLocation" x="169" y="16"/>
         </scene>
-        <!--View Controller - Create a Breakdown-->
+        <!--Age Selection View Controller - Create a Breakdown-->
         <scene sceneID="HiI-U7-lQ7">
             <objects>
-                <viewController id="Co6-Ss-2pS" sceneMemberID="viewController">
+                <viewController id="Co6-Ss-2pS" customClass="AgeSelectionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9dn-Kc-Tna"/>
                         <viewControllerLayoutGuide type="bottom" id="Dtx-Ad-u4S"/>
@@ -378,6 +378,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create a Breakdown" id="CiT-Yv-KaN"/>
+                    <connections>
+                        <outlet property="picker" destination="W0w-33-qkf" id="RHT-we-otp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZA-3l-w6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

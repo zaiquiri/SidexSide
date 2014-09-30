@@ -11,6 +11,8 @@
 #import "HeadshotSelectionViewController.h"
 #import "ImageResizer.h"
 #import "BasicProfileDetailsViewController.h"
+#import "AgeSelectionViewController.h"
+#import "AgePickerDelegateDataSource.h"
 
 @implementation SidexSideAppDelegate
 
@@ -63,6 +65,10 @@
     GenderPickerDelegateDataSource *genderPickerDelegateDataSource = [[GenderPickerDelegateDataSource alloc] initWithGenders:@[@"Male", @"Female", @"Doesn't Matter"]];
     
     homeViewController.pickerDelegateDataSource = genderPickerDelegateDataSource;
+    
+    AgePickerDelegateDataSource *agePickerDelegateDataSource = [[AgePickerDelegateDataSource alloc] initWithAgesFrom:18 through:99];
+    
+    homeViewController.agePickerDelegateDataSource = agePickerDelegateDataSource;
     
     
     return YES;
