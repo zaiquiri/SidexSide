@@ -14,6 +14,7 @@
 - (void)setProfileComplete:(BOOL)complete;
 - (void)save;
 - (BOOL) isLoggedIn;
+- (void)logout;
 
 
 @end

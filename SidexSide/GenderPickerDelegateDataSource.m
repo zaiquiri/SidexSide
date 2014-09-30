@@ -25,20 +25,20 @@
     return (int)[genders count]/2;
 }
 
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return [genders count];
-}
-
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 1;
-}
-
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     selectedGender = genders[row];
 }
 
 - (NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     return genders[row];
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [genders count];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
 }
 
 @end

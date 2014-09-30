@@ -60,4 +60,8 @@
 - (BOOL)isLoggedIn {
     return [PFUser currentUser] ? YES : NO;
 }
+
+- (void)logout {
+    [PFUser logOut];
+}
 @end

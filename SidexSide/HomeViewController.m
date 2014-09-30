@@ -25,4 +25,8 @@
     }
 }
 
+- (IBAction)logout {
+    [userManager logout];
+}
+
 @end
