@@ -54,13 +54,15 @@
     
     LogInAndSignUpHandler *logInAndSignUpHandler = [[LogInAndSignUpHandler alloc] initWithLogInViewController:logInViewController signUpViewController:signUpViewController logInDelegate:logInDelegate signUpDelegate:signUpDelegate];
     
-    SidexSidePFUser *pfUser = [[SidexSidePFUser alloc] init];
-    
     UINavigationController *rootNavigationController = (UINavigationController *) self.window.rootViewController;
     HomeViewController *homeViewController = (HomeViewController *)rootNavigationController.viewControllers[0];
     
     homeViewController.logInAndSignUpHandler = logInAndSignUpHandler;
-    homeViewController.pfUser = pfUser;
+    homeViewController.userManager = userManager;
+
+    GenderPickerDelegateDataSource *genderPickerDelegateDataSource = [[GenderPickerDelegateDataSource alloc] initWithGenders:@[@"Male", @"Female", @"Doesn't Matter"]];
+    
+    homeViewController.pickerDelegateDataSource = genderPickerDelegateDataSource;
     
     
     return YES;

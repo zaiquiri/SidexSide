@@ -13,6 +13,7 @@
 - (void)setTravelRadius:(NSString *)travelRadius;
 - (void)setProfileComplete:(BOOL)complete;
 - (void)save;
+- (BOOL) isLoggedIn;
 
 
 @end

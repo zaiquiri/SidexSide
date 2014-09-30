@@ -56,4 +56,8 @@
 - (void)save {
     [[PFUser currentUser] saveInBackground];
 }
+
+- (BOOL)isLoggedIn {
+    return [PFUser currentUser] ? YES : NO;
+}
 @end
