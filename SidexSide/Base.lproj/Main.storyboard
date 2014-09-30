@@ -422,6 +422,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Finish your Breakdown" id="v2J-Xa-TEb"/>
+                    <connections>
+                        <outlet property="picker" destination="TvZ-5Y-0Fc" id="urM-bL-WUC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Um5-2K-Rv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

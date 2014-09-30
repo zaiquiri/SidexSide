@@ -3,6 +3,7 @@
 #import "UserManager.h"
 #import "GenderPickerDelegateDataSource.h"
 #import "AgePickerDelegateDataSource.h"
+#import "ProjectTypeDelegateDataSource.h"
 
 @interface HomeViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -10,5 +11,6 @@
 @property (strong, nonatomic) UserManager *userManager;
 @property (strong, nonatomic) GenderPickerDelegateDataSource *pickerDelegateDataSource;
 @property (strong, nonatomic) AgePickerDelegateDataSource *agePickerDelegateDataSource;
+@property (strong, nonatomic) ProjectTypeDelegateDataSource *projectTypeDelegateDataSource;
 
 @end

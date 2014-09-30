@@ -13,6 +13,7 @@
 @synthesize userManager;
 @synthesize pickerDelegateDataSource;
 @synthesize agePickerDelegateDataSource;
+@synthesize projectTypeDelegateDataSource;
 
 - (void)viewDidLoad {
     picker.delegate = pickerDelegateDataSource;
@@ -35,6 +36,7 @@
     AgeSelectionViewController *destinationViewController = (AgeSelectionViewController *)segue.destinationViewController;
     destinationViewController.selectedGender = pickerDelegateDataSource.selectedGender;
     destinationViewController.pickerDelegateDataSource = agePickerDelegateDataSource;
+    destinationViewController.projectTypeDelegateDataSource = projectTypeDelegateDataSource;
 }
 
 @end

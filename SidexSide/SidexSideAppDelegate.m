@@ -13,6 +13,8 @@
 #import "BasicProfileDetailsViewController.h"
 #import "AgeSelectionViewController.h"
 #import "AgePickerDelegateDataSource.h"
+#import "ProjectTypeDelegateDataSource.h"
+#import "ProjectTypeSelectionViewController.h"
 
 @implementation SidexSideAppDelegate
 
@@ -69,6 +71,10 @@
     AgePickerDelegateDataSource *agePickerDelegateDataSource = [[AgePickerDelegateDataSource alloc] initWithAgesFrom:18 through:99];
     
     homeViewController.agePickerDelegateDataSource = agePickerDelegateDataSource;
+    
+    ProjectTypeDelegateDataSource *projectTypeDelegateDataSource = [[ProjectTypeDelegateDataSource alloc] initWithProjectTypes:@[@"Theatre", @"Film", @"Television", @"Voiceover"]];
+    
+    homeViewController.projectTypeDelegateDataSource = projectTypeDelegateDataSource;
     
     
     return YES;
