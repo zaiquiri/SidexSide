@@ -38,10 +38,8 @@
     
     if (!userFinder.somethingBad){
         //dismiss finding in progress visual
-        //Inject info from userFinder into scenePartnerFoundViewController;
         ScenePartnerFoundViewController *scenePartnerFoundViewController = castingNavigationController.viewControllers[0];
         scenePartnerFoundViewController.scenePartner = userFinder.bestScenePartner;
-        
         [self presentViewController:castingNavigationController animated:YES completion:nil];
         [self.navigationController popToRootViewControllerAnimated:NO];
     } else {
