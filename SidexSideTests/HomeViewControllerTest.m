@@ -2,7 +2,7 @@
 #import <OCMock/OCMock.h>
 #import "LogInAndSignUpHandler.h"
 #import "HomeViewController.h"
-#import "SidexSidePFUser.h"
+#import "SidexSideUser.h"
 
 @interface HomeViewControllerTest : XCTestCase
 
@@ -26,7 +26,7 @@
 }
 
 - (void) testShouldCallShowLoginWhenNoUserIsLoggedIn {
-    id pfUser = OCMClassMock([SidexSidePFUser class]);
+    id pfUser = OCMClassMock([SidexSideUser class]);
     OCMStub([pfUser currentUser]).andReturn(nil);
     id logInAndSignUpHandler = OCMClassMock([LogInAndSignUpHandler class]);
     homeViewController.userManager = pfUser;
@@ -39,8 +39,8 @@
 }
 
 - (void) testShouldNotCallShowLoginWhenAUserIsLoggedIn {
-    SidexSidePFUser *user = [[SidexSidePFUser alloc] init];
-    id pfUser = OCMClassMock([SidexSidePFUser class]);
+    SidexSideUser *user = [[SidexSideUser alloc] init];
+    id pfUser = OCMClassMock([SidexSideUser class]);
     OCMStub([pfUser currentUser]).andReturn(user);
     id logInAndSignUpHandler = OCMClassMock([LogInAndSignUpHandler class]);
     homeViewController.pfUser = pfUser;

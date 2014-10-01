@@ -13,6 +13,7 @@
 @synthesize selectedProjectType;
 @synthesize breakdown;
 @synthesize userFinder;
+@synthesize castingNavigationController;
 
 - (void)viewDidLoad{
     [breakdown setText:[self breakdownText]];
@@ -24,9 +25,37 @@
 
 - (IBAction)sendBreakdown:(id)sender {
     //Show finding in progress
-    [userFinder findScenePartnerAndPresentFrom:self.navigationController completion:^{
-        [self.navigationController popToRootViewControllerAnimated:NO];
-    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scenePartnerFound) name:@"scenePartnerFound" object:userFinder];
+    
+    [userFinder findScenePartnerWithGender:selectedGender
+                                       age:selectedAge
+                               projectType:selectedProjectType];
+}
+
+- (void)scenePartnerFound {
+    
+    if (!userFinder.somethingBad){
+        [[[UIAlertView alloc] initWithTitle:@"Yaay!"
+                                    message:@"I got the notification!"
+                                   delegate:nil
+                          cancelButtonTitle:@"WOOT"
+                          otherButtonTitles:nil, nil] show];
+        //dismiss finding in progress visual
+        //Inject info from userFinder into scenePartnerFoundViewController;
+        //[self presentViewController:castingNavigationController animated:YES completion:nil];
+        //[self.navigationController popToRootViewControllerAnimated:NO];
+    } else {
+        //dismiss finding in progress visual
+        NSLog(@"%@", userFinder.somethingBad);
+        [[[UIAlertView alloc] initWithTitle:@"Oops!"
+                                    message:@"There was an error finding your scene partner!"
+                                   delegate:nil
+                          cancelButtonTitle:@"Try again"
+                          otherButtonTitles:nil, nil] show];
+    }
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"scenePartnerFound" object:nil];
 }
 
 @end

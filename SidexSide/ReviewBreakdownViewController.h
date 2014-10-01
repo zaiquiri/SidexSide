@@ -7,5 +7,6 @@
 @property (strong, nonatomic) NSString *selectedAge;
 @property (strong, nonatomic) NSString *selectedProjectType;
 @property (strong, nonatomic) UserFinder *userFinder;
+@property (strong, nonatomic) UINavigationController *castingNavigationController;
 
 @end

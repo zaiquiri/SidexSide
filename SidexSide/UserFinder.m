@@ -1,43 +1,31 @@
 #import "UserFinder.h"
 #import <Parse/Parse.h>
 #import "ScenePartnerFoundViewController.h"
-
-@interface UserFinder()
-
-@property (strong, nonatomic) UINavigationController *castingNavigationController;
-
-@end
+#import "SidexSideUser.h"
 
 @implementation UserFinder
 
-@synthesize castingNavigationController;
+@synthesize bestScenePartner;
+@synthesize somethingBad;
 
-- (id)initWithCastingNavigationController:(UINavigationController *)castingNavigationController {
-    if (self = [super init]){
-        self.castingNavigationController = castingNavigationController;
-        return self;
-    }
-    return nil;
-}
-
-- (void)findScenePartnerAndPresentFrom:(UIViewController *)presentingViewController completion:(void(^)())completion{
+- (void)findScenePartnerWithGender:(NSString *)gender age:(NSString *)age projectType:(NSString *) projectType {
+    
+    bestScenePartner = nil;
+    somethingBad = nil;
+    
     PFQuery *query = [PFUser query];
-    //TODO: put conditions on query
+    //put conditions on query here
+    
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            int random = arc4random() % [objects count];
-            PFUser *user = objects[random];
-            
-            ScenePartnerFoundViewController *scenePartnerFoundViewController = [castingNavigationController.viewControllers objectAtIndex:0];
-            
-            //inject found user into scenePartnerFoundViewController
-            //inject breakdown information into scenePartnerFoundViewController
-            
-            [presentingViewController presentViewController:castingNavigationController animated:YES completion:nil];
-            
-            completion();
+            PFUser *found = objects[(arc4random() % [objects count])]; //random user
+            bestScenePartner = [[SidexSideUser alloc] initWithPFUser:found];
+            dispatch_async(dispatch_get_main_queue(),^{
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"scenePartnerFound"
+                                                                    object:self];
+            });
         } else {
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
+            somethingBad = [NSString stringWithFormat:@"Error: %@ %@", error, [error userInfo]];
         }
         
     }];

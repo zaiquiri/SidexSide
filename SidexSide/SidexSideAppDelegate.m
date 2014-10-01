@@ -6,7 +6,7 @@
 #import "LogInDelegate.h"
 #import "SignUpDelegate.h"
 #import "HomeViewController.h"
-#import "SidexSidePFUser.h"
+#import "SidexSideUser.h"
 #import "MismatchPasswordAlert.h"
 #import "HeadshotSelectionViewController.h"
 #import "ImageResizer.h"
@@ -79,7 +79,7 @@
     
     UINavigationController *castingNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"CastingNavigationController"];
     
-    UserFinder *userFinder = [[UserFinder alloc] initWithCastingNavigationController:castingNavigationController];
+    UserFinder *userFinder = [[UserFinder alloc] init];
     
     homeViewController.userFinder = userFinder;
     

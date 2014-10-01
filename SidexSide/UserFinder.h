@@ -1,8 +1,11 @@
 #import <Foundation/Foundation.h>
+#import "SidexSideUser.h"
 
 @interface UserFinder : NSObject
 
-- (id)initWithCastingNavigationController:(UINavigationController *)castingNavigationController;
-- (void)findScenePartnerAndPresentFrom:(UIViewController *)presentingViewController completion:(void(^)())completion;
+@property (strong, nonatomic) SidexSideUser *bestScenePartner;
+@property (strong, nonatomic) NSString *somethingBad;
+
+- (void)findScenePartnerWithGender:(NSString *)gender age:(NSString *)age projectType:(NSString *)projectType;
 
 @end
