@@ -1,4 +1,5 @@
 #import "ReviewBreakdownViewController.h"
+#import "ScenePartnerFoundViewController.h"
 
 @interface ReviewBreakdownViewController()
 
@@ -36,15 +37,13 @@
 - (void)scenePartnerFound {
     
     if (!userFinder.somethingBad){
-        [[[UIAlertView alloc] initWithTitle:@"Yaay!"
-                                    message:@"I got the notification!"
-                                   delegate:nil
-                          cancelButtonTitle:@"WOOT"
-                          otherButtonTitles:nil, nil] show];
         //dismiss finding in progress visual
         //Inject info from userFinder into scenePartnerFoundViewController;
-        //[self presentViewController:castingNavigationController animated:YES completion:nil];
-        //[self.navigationController popToRootViewControllerAnimated:NO];
+        ScenePartnerFoundViewController *scenePartnerFoundViewController = castingNavigationController.viewControllers[0];
+        scenePartnerFoundViewController.scenePartner = userFinder.bestScenePartner;
+        
+        [self presentViewController:castingNavigationController animated:YES completion:nil];
+        [self.navigationController popToRootViewControllerAnimated:NO];
     } else {
         //dismiss finding in progress visual
         NSLog(@"%@", userFinder.somethingBad);

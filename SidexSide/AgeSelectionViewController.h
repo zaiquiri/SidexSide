@@ -9,5 +9,6 @@
 @property (strong, nonatomic) NSString *selectedGender;
 @property (strong, nonatomic) ProjectTypeDelegateDataSource *projectTypeDelegateDataSource;
 @property (strong, nonatomic) UserFinder *userFinder;
+@property (strong, nonatomic) UINavigationController *castingNavigationController;
 
 @end

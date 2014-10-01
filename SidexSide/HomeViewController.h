@@ -14,5 +14,6 @@
 @property (strong, nonatomic) AgePickerDelegateDataSource *agePickerDelegateDataSource;
 @property (strong, nonatomic) ProjectTypeDelegateDataSource *projectTypeDelegateDataSource;
 @property (strong, nonatomic) UserFinder *userFinder;
+@property (strong, nonatomic) UINavigationController *castingNavigationController;
 
 @end

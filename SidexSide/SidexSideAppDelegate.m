@@ -79,6 +79,8 @@
     
     UINavigationController *castingNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"CastingNavigationController"];
     
+    homeViewController.castingNavigationController = castingNavigationController;
+    
     UserFinder *userFinder = [[UserFinder alloc] init];
     
     homeViewController.userFinder = userFinder;

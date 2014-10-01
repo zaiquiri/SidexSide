@@ -13,6 +13,8 @@
     bestScenePartner = nil;
     somethingBad = nil;
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userReady) name:@"SidexSideUserReady" object:nil];
+    
     PFQuery *query = [PFUser query];
     //put conditions on query here
     
@@ -20,16 +22,20 @@
         if (!error) {
             PFUser *found = objects[(arc4random() % [objects count])]; //random user
             bestScenePartner = [[SidexSideUser alloc] initWithPFUser:found];
-            dispatch_async(dispatch_get_main_queue(),^{
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"scenePartnerFound"
-                                                                    object:self];
-            });
         } else {
             somethingBad = [NSString stringWithFormat:@"Error: %@ %@", error, [error userInfo]];
         }
         
     }];
 
+}
+
+- (void)userReady {
+    dispatch_async(dispatch_get_main_queue(),^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"scenePartnerFound"
+                                                            object:self];
+    });
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"SidexSideUserReady" object:nil];
 }
 
 @end

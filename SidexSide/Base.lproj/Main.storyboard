@@ -436,6 +436,8 @@
                         <outlet property="additionalInformationView" destination="KMQ-Ch-Dyc" id="lgA-5f-fza"/>
                         <outlet property="flipContainer" destination="IjU-QJ-5Bp" id="na0-WY-osn"/>
                         <outlet property="headshotView" destination="unR-qf-IdY" id="M2c-N3-7b0"/>
+                        <outlet property="name" destination="l4X-rZ-30B" id="faY-Zj-LEo"/>
+                        <outlet property="unions" destination="7mh-R1-dVj" id="VaQ-fc-Zg6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAu-9M-X3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
