@@ -281,8 +281,6 @@
 				9290C4E119B3528A00581CB6 /* Supporting Files */,
 				926B4B0C19D5D06400439EDB /* ImageResizer.h */,
 				926B4B0D19D5D06400439EDB /* ImageResizer.m */,
-				926B4B1319D5E12900439EDB /* UserManager.h */,
-				926B4B1419D5E12900439EDB /* UserManager.m */,
 				926B4B1819D72FC800439EDB /* BasicProfileDetailsViewController.h */,
 				926B4B1919D72FC800439EDB /* BasicProfileDetailsViewController.m */,
 				926B4B2819DB10C600439EDB /* PickerDelegateDataSources */,
@@ -372,6 +370,8 @@
 		92D4CF0819D065C0004250A7 /* ParseWrappers */ = {
 			isa = PBXGroup;
 			children = (
+				926B4B1319D5E12900439EDB /* UserManager.h */,
+				926B4B1419D5E12900439EDB /* UserManager.m */,
 				926B4B3819DB2FDF00439EDB /* UserFinder.h */,
 				926B4B3919DB2FDF00439EDB /* UserFinder.m */,
 				92D4CEFB19CC9CE5004250A7 /* SidexSidePFUser.h */,
