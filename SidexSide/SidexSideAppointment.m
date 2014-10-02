@@ -43,7 +43,7 @@
                               otherButtonTitles:nil] show];
         } else {
             dispatch_async(dispatch_get_main_queue(),^{
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"appointmentCreatedSuccesfully" object:self];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"appointmentSaved" object:self];
             });
         }
     }];

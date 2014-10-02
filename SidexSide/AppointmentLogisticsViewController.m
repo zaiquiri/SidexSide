@@ -59,7 +59,7 @@
                                                                               location:addressBox.text
                                                                            projectType:projectType];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appointmentCreated:) name:@"scenePartnerFound" object:appointment];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appointmentSaved:) name:@"scenePartnerFound" object:appointment];
     
     [appointment save];
 }
