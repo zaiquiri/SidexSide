@@ -8,5 +8,6 @@
 @property (strong, nonatomic) SidexSideUser *scenePartner;
 @property (strong, nonatomic) TimePickerDelegateDataSource *timePickerDelegateDataSource;
 @property (strong, nonatomic) DateHelper *dateHelper;
+@property (strong, nonatomic) NSString *projectType;
 
 @end

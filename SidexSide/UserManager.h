@@ -15,6 +15,7 @@
 - (void)save;
 - (BOOL) isLoggedIn;
 - (void)logout;
+- (NSString *)userId;
 
 
 @end

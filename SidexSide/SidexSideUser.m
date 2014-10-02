@@ -6,11 +6,13 @@
 @synthesize headshot;
 @synthesize name;
 @synthesize unions;
+@synthesize userId;
 
 - (id)initWithPFUser:(PFUser *)pfUser {
     if (self = [super init]) {
         name = [pfUser objectForKey:@"name"];
         unions = [pfUser objectForKey:@"unions"];
+        userId = [pfUser objectId];
         [self loadHeadshotFor:pfUser];
         return self;
     }

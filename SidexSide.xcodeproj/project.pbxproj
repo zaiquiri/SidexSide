@@ -11,6 +11,7 @@
 		924D0D4119DDA6A3005E06CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924D0D4019DDA6A3005E06CD /* MapKit.framework */; };
 		924D0D4419DDA80E005E06CD /* TimePickerDelegateDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4319DDA80E005E06CD /* TimePickerDelegateDataSource.m */; };
 		924D0D4719DDB0D1005E06CD /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4619DDB0D1005E06CD /* DateHelper.m */; };
+		924D0D4A19DDC33F005E06CD /* SidexSideAppointment.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4919DDC33F005E06CD /* SidexSideAppointment.m */; };
 		926B4AFA19D4693F00439EDB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF819D4693F00439EDB /* Bolts.framework */; };
 		926B4AFB19D4693F00439EDB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF919D4693F00439EDB /* Parse.framework */; };
 		926B4AFD19D474F500439EDB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 926B4AFC19D474F500439EDB /* logo.png */; };
@@ -87,6 +88,8 @@
 		924D0D4319DDA80E005E06CD /* TimePickerDelegateDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerDelegateDataSource.m; sourceTree = "<group>"; };
 		924D0D4519DDB0D1005E06CD /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
 		924D0D4619DDB0D1005E06CD /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
+		924D0D4819DDC33F005E06CD /* SidexSideAppointment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidexSideAppointment.h; sourceTree = "<group>"; };
+		924D0D4919DDC33F005E06CD /* SidexSideAppointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidexSideAppointment.m; sourceTree = "<group>"; };
 		926B4AF519D4688D00439EDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		926B4AF819D4693F00439EDB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.4.1/Bolts.framework"; sourceTree = "<group>"; };
 		926B4AF919D4693F00439EDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.4.1/Parse.framework"; sourceTree = "<group>"; };
@@ -395,6 +398,8 @@
 				926B4B3919DB2FDF00439EDB /* UserFinder.m */,
 				92D4CEFB19CC9CE5004250A7 /* SidexSideUser.h */,
 				92D4CEFC19CC9CE5004250A7 /* SidexSideUser.m */,
+				924D0D4819DDC33F005E06CD /* SidexSideAppointment.h */,
+				924D0D4919DDC33F005E06CD /* SidexSideAppointment.m */,
 			);
 			name = ParseWrappers;
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 				926B4B0019D505A000439EDB /* HeadshotSelectionViewController.m in Sources */,
 				92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */,
 				926B4B3719DB2F3100439EDB /* ScenePartnerFoundViewController.m in Sources */,
+				924D0D4A19DDC33F005E06CD /* SidexSideAppointment.m in Sources */,
 				926B4B2419DB089E00439EDB /* GenderPickerDelegateDataSource.m in Sources */,
 				92D4CF2319D32FA2004250A7 /* InvalidEmailAlert.m in Sources */,
 				926B4B3419DB25D500439EDB /* ReviewBreakdownViewController.m in Sources */,

@@ -489,12 +489,16 @@
                                 <state key="normal" title="Ask soAndso to Confirm">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendConfirm:" destination="cn1-Ii-nh6" eventType="touchUpInside" id="DsA-zS-w4p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="VUV-PR-f6A"/>
                     <connections>
+                        <outlet property="addressBox" destination="z7L-an-vGX" id="iXc-8F-w9H"/>
                         <outlet property="confirmButton" destination="YoN-yl-lZs" id="X9q-F9-bT2"/>
                         <outlet property="mapView" destination="7wz-AD-aWB" id="TfY-LZ-QbJ"/>
                         <outlet property="timePicker" destination="k5U-U0-bly" id="nCN-U6-Trs"/>

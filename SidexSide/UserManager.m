@@ -64,4 +64,8 @@
 - (void)logout {
     [PFUser logOut];
 }
+
+-(NSString *)userId {
+    return [[PFUser currentUser] objectId];
+}
 @end

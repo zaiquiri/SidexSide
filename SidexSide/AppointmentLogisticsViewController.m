@@ -1,11 +1,13 @@
 #import "AppointmentLogisticsViewController.h"
 #import <MapKit/MapKit.h>
+#import "SidexSideAppointment.h"
 
 @interface AppointmentLogisticsViewController()
 
 @property (strong, nonatomic) IBOutlet UIButton *confirmButton;
 @property (strong, nonatomic) IBOutlet UIPickerView *timePicker;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) IBOutlet UITextField *addressBox;
 
 
 @end
@@ -18,6 +20,9 @@
 @synthesize timePicker;
 @synthesize pickerDelegateDataSource;
 @synthesize mapView;
+@synthesize userManager;
+@synthesize addressBox;
+@synthesize projectType;
 
 - (void)viewDidLoad {
     NSString *confirmButtonText = [NSString stringWithFormat:@"Get confirmation from %@", scenePartner.name];
@@ -26,16 +31,43 @@
     timePicker.delegate = pickerDelegateDataSource;
     timePicker.dataSource = pickerDelegateDataSource;
     
+    [self setPickerToCurrentTime];
+    [self setUpMapView];
+
+}
+
+- (void)setPickerToCurrentTime {
     [timePicker selectRow:(dateHelper.nowHour -1) inComponent:0 animated:YES];
     [timePicker selectRow:(dateHelper.nowMinute -1) inComponent:1 animated:YES];
     [timePicker selectRow:dateHelper.nowMeridiem inComponent:2 animated:YES];
-    
+}
+
+- (void)setUpMapView {
     self.mapView.showsUserLocation = YES;
     [self.mapView.userLocation addObserver:self
                                 forKeyPath:@"location"
                                    options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld)
                                    context:NULL];
+}
 
+- (IBAction)sendConfirm:(id)sender {
+    SidexSideAppointment *appointment = [[SidexSideAppointment alloc] initWithSenderId:[userManager userId]
+                                                                              readerId:scenePartner.userId
+                                                                                  hour:pickerDelegateDataSource.selectedHour
+                                                                                minute:pickerDelegateDataSource.selectedMinute
+                                                                              meridiem:pickerDelegateDataSource.selectedMeridiem
+                                                                              location:addressBox.text
+                                                                           projectType:projectType];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appointmentCreated:) name:@"scenePartnerFound" object:appointment];
+    
+    [appointment save];
+}
+
+- (void)appointmentCreated:(NSNotification *)notification{
+    SidexSideAppointment *appointment = (SidexSideAppointment *) notification.object;
+    [appointment pushToScenePartner];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
