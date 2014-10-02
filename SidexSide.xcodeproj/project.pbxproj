@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		924D0D3F19DC8762005E06CD /* AppointmentLogisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D3E19DC8762005E06CD /* AppointmentLogisticsViewController.m */; };
+		924D0D4119DDA6A3005E06CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924D0D4019DDA6A3005E06CD /* MapKit.framework */; };
+		924D0D4419DDA80E005E06CD /* TimePickerDelegateDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4319DDA80E005E06CD /* TimePickerDelegateDataSource.m */; };
+		924D0D4719DDB0D1005E06CD /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4619DDB0D1005E06CD /* DateHelper.m */; };
 		926B4AFA19D4693F00439EDB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF819D4693F00439EDB /* Bolts.framework */; };
 		926B4AFB19D4693F00439EDB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF919D4693F00439EDB /* Parse.framework */; };
 		926B4AFD19D474F500439EDB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 926B4AFC19D474F500439EDB /* logo.png */; };
@@ -79,6 +82,11 @@
 /* Begin PBXFileReference section */
 		924D0D3D19DC8762005E06CD /* AppointmentLogisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentLogisticsViewController.h; sourceTree = "<group>"; };
 		924D0D3E19DC8762005E06CD /* AppointmentLogisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentLogisticsViewController.m; sourceTree = "<group>"; };
+		924D0D4019DDA6A3005E06CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		924D0D4219DDA80E005E06CD /* TimePickerDelegateDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePickerDelegateDataSource.h; sourceTree = "<group>"; };
+		924D0D4319DDA80E005E06CD /* TimePickerDelegateDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerDelegateDataSource.m; sourceTree = "<group>"; };
+		924D0D4519DDB0D1005E06CD /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
+		924D0D4619DDB0D1005E06CD /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
 		926B4AF519D4688D00439EDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		926B4AF819D4693F00439EDB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.4.1/Bolts.framework"; sourceTree = "<group>"; };
 		926B4AF919D4693F00439EDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.4.1/Parse.framework"; sourceTree = "<group>"; };
@@ -177,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924D0D4119DDA6A3005E06CD /* MapKit.framework in Frameworks */,
 				926B4AFA19D4693F00439EDB /* Bolts.framework in Frameworks */,
 				926B4AFB19D4693F00439EDB /* Parse.framework in Frameworks */,
 				92D4CF1F19D32A86004250A7 /* libOCMock.a in Frameworks */,
@@ -220,6 +229,8 @@
 				926B4B2319DB089E00439EDB /* GenderPickerDelegateDataSource.m */,
 				926B4B2519DB10B200439EDB /* AgePickerDelegateDataSource.h */,
 				926B4B2619DB10B200439EDB /* AgePickerDelegateDataSource.m */,
+				924D0D4219DDA80E005E06CD /* TimePickerDelegateDataSource.h */,
+				924D0D4319DDA80E005E06CD /* TimePickerDelegateDataSource.m */,
 			);
 			name = PickerDelegateDataSources;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 		9290C4D919B3528A00581CB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				924D0D4019DDA6A3005E06CD /* MapKit.framework */,
 				926B4AF819D4693F00439EDB /* Bolts.framework */,
 				926B4AF919D4693F00439EDB /* Parse.framework */,
 				926B4AF519D4688D00439EDB /* Parse.framework */,
@@ -287,6 +299,8 @@
 				926B4B1819D72FC800439EDB /* BasicProfileDetailsViewController.h */,
 				926B4B1919D72FC800439EDB /* BasicProfileDetailsViewController.m */,
 				926B4B2819DB10C600439EDB /* PickerDelegateDataSources */,
+				924D0D4519DDB0D1005E06CD /* DateHelper.h */,
+				924D0D4619DDB0D1005E06CD /* DateHelper.m */,
 			);
 			path = SidexSide;
 			sourceTree = "<group>";
@@ -537,6 +551,7 @@
 				926B4B2E19DB1A9800439EDB /* ProjectTypeSelectionViewController.m in Sources */,
 				92D4CF0519CCB4DB004250A7 /* SignUpDelegate.m in Sources */,
 				926B4B3119DB1B8F00439EDB /* ProjectTypeDelegateDataSource.m in Sources */,
+				924D0D4719DDB0D1005E06CD /* DateHelper.m in Sources */,
 				926B4B1A19D72FC800439EDB /* BasicProfileDetailsViewController.m in Sources */,
 				926B4B2B19DB157700439EDB /* AgeSelectionViewController.m in Sources */,
 				926B4B0019D505A000439EDB /* HeadshotSelectionViewController.m in Sources */,
@@ -551,6 +566,7 @@
 				924D0D3F19DC8762005E06CD /* AppointmentLogisticsViewController.m in Sources */,
 				92D4CF1919D26A8B004250A7 /* MismatchPasswordAlert.m in Sources */,
 				92D4CEF719CC97BC004250A7 /* LogInAndSignUpHandler.m in Sources */,
+				924D0D4419DDA80E005E06CD /* TimePickerDelegateDataSource.m in Sources */,
 				92D4CF0219CCB4BB004250A7 /* LogInDelegate.m in Sources */,
 				926B4B3A19DB2FDF00439EDB /* UserFinder.m in Sources */,
 				92D4CEED19CA025B004250A7 /* HomeViewController.m in Sources */,

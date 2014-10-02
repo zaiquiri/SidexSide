@@ -450,10 +450,10 @@
             </objects>
             <point key="canvasLocation" x="169" y="700"/>
         </scene>
-        <!--View Controller-->
+        <!--Appointment Logistics View Controller-->
         <scene sceneID="PDm-rt-sIV">
             <objects>
-                <viewController id="cn1-Ii-nh6" sceneMemberID="viewController">
+                <viewController id="cn1-Ii-nh6" customClass="AppointmentLogisticsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RXH-0V-7Uo"/>
                         <viewControllerLayoutGuide type="bottom" id="LoH-pj-pZt"/>
@@ -484,7 +484,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoN-yl-lZs">
-                                <rect key="frame" x="77" y="484" width="167" height="30"/>
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ask soAndso to Confirm">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -494,6 +494,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="VUV-PR-f6A"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="YoN-yl-lZs" id="X9q-F9-bT2"/>
+                        <outlet property="mapView" destination="7wz-AD-aWB" id="TfY-LZ-QbJ"/>
+                        <outlet property="timePicker" destination="k5U-U0-bly" id="nCN-U6-Trs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nV-qq-Y0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

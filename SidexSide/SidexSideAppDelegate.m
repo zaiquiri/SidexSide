@@ -16,6 +16,9 @@
 #import "ProjectTypeDelegateDataSource.h"
 #import "ProjectTypeSelectionViewController.h"
 #import "UserFinder.h"
+#import "ScenePartnerFoundViewController.h"
+#import "TimePickerDelegateDataSource.h"
+#import "DateHelper.h"
 
 @implementation SidexSideAppDelegate
 
@@ -78,6 +81,14 @@
     homeViewController.projectTypeDelegateDataSource = projectTypeDelegateDataSource;
     
     UINavigationController *castingNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"CastingNavigationController"];
+    
+    ScenePartnerFoundViewController *scenePartnerFoundViewController = castingNavigationController.viewControllers[0];
+    
+    DateHelper *dateHelper = [[DateHelper alloc] init];
+    TimePickerDelegateDataSource *timePickerDelegateDataSource = [[TimePickerDelegateDataSource alloc] init];
+    
+    scenePartnerFoundViewController.dateHelper = dateHelper;
+    scenePartnerFoundViewController.timePickerDelegateDataSource = timePickerDelegateDataSource;
     
     homeViewController.castingNavigationController = castingNavigationController;
     
