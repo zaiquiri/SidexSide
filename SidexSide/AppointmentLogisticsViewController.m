@@ -37,9 +37,17 @@
 }
 
 - (void)setPickerToCurrentTime {
-    [timePicker selectRow:(dateHelper.nowHour -1) inComponent:0 animated:YES];
-    [timePicker selectRow:(dateHelper.nowMinute -1) inComponent:1 animated:YES];
-    [timePicker selectRow:dateHelper.nowMeridiem inComponent:2 animated:YES];
+    NSInteger hourRow = (dateHelper.nowHour - 1);
+    NSInteger minuteRow = (dateHelper.nowMinute - 1);
+    NSInteger meridiemRow = dateHelper.nowMeridiem;
+    
+    [timePicker selectRow:hourRow inComponent:0 animated:YES];
+    [timePicker selectRow:minuteRow inComponent:1 animated:YES];
+    [timePicker selectRow:meridiemRow inComponent:2 animated:YES];
+    
+    [pickerDelegateDataSource pickerView:timePicker didSelectRow:hourRow inComponent:0];
+    [pickerDelegateDataSource pickerView:timePicker didSelectRow:minuteRow inComponent:1];
+    [pickerDelegateDataSource pickerView:timePicker didSelectRow:meridiemRow inComponent:2];
 }
 
 - (void)setUpMapView {
@@ -51,6 +59,7 @@
 }
 
 - (IBAction)sendConfirm:(id)sender {
+    
     SidexSideAppointment *appointment = [[SidexSideAppointment alloc] initWithSenderId:[userManager userId]
                                                                               readerId:scenePartner.userId
                                                                                   hour:pickerDelegateDataSource.selectedHour
@@ -59,12 +68,12 @@
                                                                               location:addressBox.text
                                                                            projectType:projectType];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appointmentSaved:) name:@"scenePartnerFound" object:appointment];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendPushNotification:) name:@"appointmentSaved" object:appointment];
     
     [appointment save];
 }
 
-- (void)appointmentCreated:(NSNotification *)notification{
+- (void)sendPushNotification:(NSNotification *)notification{
     SidexSideAppointment *appointment = (SidexSideAppointment *) notification.object;
     [appointment pushToScenePartner];
     [[NSNotificationCenter defaultCenter] removeObserver:self];

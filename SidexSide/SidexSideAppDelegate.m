@@ -89,6 +89,7 @@
     
     scenePartnerFoundViewController.dateHelper = dateHelper;
     scenePartnerFoundViewController.timePickerDelegateDataSource = timePickerDelegateDataSource;
+    scenePartnerFoundViewController.userManager = userManager;
     
     homeViewController.castingNavigationController = castingNavigationController;
     

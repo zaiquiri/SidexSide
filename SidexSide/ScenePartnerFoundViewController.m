@@ -21,6 +21,7 @@
 @synthesize timePickerDelegateDataSource;
 @synthesize dateHelper;
 @synthesize projectType;
+@synthesize userManager;
 
 - (void)viewDidLoad {
     [headshotView setImage:scenePartner.headshot];
@@ -38,6 +39,7 @@
     destinationViewController.dateHelper = dateHelper;
     destinationViewController.pickerDelegateDataSource = timePickerDelegateDataSource;
     destinationViewController.projectType = projectType;
+    destinationViewController.userManager = userManager;
 }
 
 @end

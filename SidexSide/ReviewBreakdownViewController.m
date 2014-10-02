@@ -40,6 +40,7 @@
         //dismiss finding in progress visual
         ScenePartnerFoundViewController *scenePartnerFoundViewController = castingNavigationController.viewControllers[0];
         scenePartnerFoundViewController.scenePartner = userFinder.bestScenePartner;
+        scenePartnerFoundViewController.projectType = selectedProjectType;
         [self presentViewController:castingNavigationController animated:YES completion:nil];
         [self.navigationController popToRootViewControllerAnimated:NO];
     } else {
