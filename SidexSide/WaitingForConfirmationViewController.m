@@ -34,6 +34,14 @@
     [self performSelector:@selector(flip) withObject:nil afterDelay:FLIP_WAIT_TIME];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    for (UIView * txt in self.view.subviews){
+        if ([txt isKindOfClass:[UITextField class]] && [txt isFirstResponder]) {
+            [txt resignFirstResponder];
+        }
+    }
+}
+
 - (IBAction)sendInfo:(id)sender {
     [self flip];
 }
