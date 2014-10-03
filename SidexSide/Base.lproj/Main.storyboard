@@ -491,6 +491,7 @@
                                 </state>
                                 <connections>
                                     <action selector="sendConfirm:" destination="cn1-Ii-nh6" eventType="touchUpInside" id="DsA-zS-w4p"/>
+                                    <segue destination="gt5-Ih-fci" kind="push" id="XyM-hN-wB2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -507,6 +508,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nV-qq-Y0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="572" y="700"/>
+        </scene>
+        <!--Waiting For Confirmation View Controller-->
+        <scene sceneID="fqe-oK-Gwq">
+            <objects>
+                <viewController id="gt5-Ih-fci" customClass="WaitingForConfirmationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dLb-t0-aS8"/>
+                        <viewControllerLayoutGuide type="bottom" id="rQB-Zw-qHH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAd-vw-PBD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6G-PA-cEs">
+                                <rect key="frame" x="33" y="104" width="254" height="359"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yPE-hn-Zsn">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="359"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In the meantime... give soAndso some more info about your appointment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="214" translatesAutoresizingMaskIntoConstraints="NO" id="KRr-pb-9ku">
+                                                <rect key="frame" x="20" y="20" width="214" height="78"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zpy-X4-xuI"/>
+                    <connections>
+                        <outlet property="flipContainer" destination="t6G-PA-cEs" id="r3u-Sr-a9i"/>
+                        <outlet property="infoView" destination="yPE-hn-Zsn" id="Upw-sa-vR7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7N-Q5-0kl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="702"/>
         </scene>
         <!--Age Selection View Controller - Create a Breakdown-->
         <scene sceneID="HiI-U7-lQ7">

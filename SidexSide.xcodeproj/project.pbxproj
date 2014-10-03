@@ -12,6 +12,7 @@
 		924D0D4419DDA80E005E06CD /* TimePickerDelegateDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4319DDA80E005E06CD /* TimePickerDelegateDataSource.m */; };
 		924D0D4719DDB0D1005E06CD /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4619DDB0D1005E06CD /* DateHelper.m */; };
 		924D0D4A19DDC33F005E06CD /* SidexSideAppointment.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4919DDC33F005E06CD /* SidexSideAppointment.m */; };
+		924D0D5019DEEFCA005E06CD /* WaitingForConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D0D4F19DEEFCA005E06CD /* WaitingForConfirmationViewController.m */; };
 		926B4AFA19D4693F00439EDB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF819D4693F00439EDB /* Bolts.framework */; };
 		926B4AFB19D4693F00439EDB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926B4AF919D4693F00439EDB /* Parse.framework */; };
 		926B4AFD19D474F500439EDB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 926B4AFC19D474F500439EDB /* logo.png */; };
@@ -90,6 +91,8 @@
 		924D0D4619DDB0D1005E06CD /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
 		924D0D4819DDC33F005E06CD /* SidexSideAppointment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidexSideAppointment.h; sourceTree = "<group>"; };
 		924D0D4919DDC33F005E06CD /* SidexSideAppointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidexSideAppointment.m; sourceTree = "<group>"; };
+		924D0D4E19DEEFCA005E06CD /* WaitingForConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingForConfirmationViewController.h; sourceTree = "<group>"; };
+		924D0D4F19DEEFCA005E06CD /* WaitingForConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingForConfirmationViewController.m; sourceTree = "<group>"; };
 		926B4AF519D4688D00439EDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		926B4AF819D4693F00439EDB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.4.1/Bolts.framework"; sourceTree = "<group>"; };
 		926B4AF919D4693F00439EDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.4.1/Parse.framework"; sourceTree = "<group>"; };
@@ -385,6 +388,8 @@
 				926B4B3319DB25D500439EDB /* ReviewBreakdownViewController.m */,
 				924D0D3D19DC8762005E06CD /* AppointmentLogisticsViewController.h */,
 				924D0D3E19DC8762005E06CD /* AppointmentLogisticsViewController.m */,
+				924D0D4E19DEEFCA005E06CD /* WaitingForConfirmationViewController.h */,
+				924D0D4F19DEEFCA005E06CD /* WaitingForConfirmationViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -560,6 +565,7 @@
 				926B4B1A19D72FC800439EDB /* BasicProfileDetailsViewController.m in Sources */,
 				926B4B2B19DB157700439EDB /* AgeSelectionViewController.m in Sources */,
 				926B4B0019D505A000439EDB /* HeadshotSelectionViewController.m in Sources */,
+				924D0D5019DEEFCA005E06CD /* WaitingForConfirmationViewController.m in Sources */,
 				92D4CEE419C9EF0B004250A7 /* SidexSideLoginViewController.m in Sources */,
 				926B4B3719DB2F3100439EDB /* ScenePartnerFoundViewController.m in Sources */,
 				924D0D4A19DDC33F005E06CD /* SidexSideAppointment.m in Sources */,
@@ -630,6 +636,114 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		924D0D4B19DE0CB9005E06CD /* GCov_Build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = GCov_Build;
+		};
+		924D0D4C19DE0CB9005E06CD /* GCov_Build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/zach/Downloads/parse-library-1.3.0",
+					"/Users/zach/Downloads/parse-library-1.4.1",
+					/Users/zach/Downloads,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
+				INFOPLIST_FILE = "SidexSide/SidexSide-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = GCov_Build;
+		};
+		924D0D4D19DE0CB9005E06CD /* GCov_Build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SidexSide.app/SidexSide";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/zach/Downloads/parse-library-1.3.0",
+					"/Users/zach/Downloads/OCHamcrest-1.9",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SidexSide/SidexSide-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zach/Projects/SidexSide/SidexSideTests,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/zach/Projects/SidexSide/Libraries,
+				);
+				INFOPLIST_FILE = "SidexSideTests/SidexSideTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/OCMock,
+					3.1/iOS,
+					/Volumes/OCMock,
+					3.1/iOS,
+					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = GCov_Build;
+		};
 		9290C50719B3528A00581CB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -650,6 +764,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -688,6 +804,8 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -839,6 +957,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9290C50719B3528A00581CB6 /* Debug */,
+				924D0D4B19DE0CB9005E06CD /* GCov_Build */,
 				9290C50819B3528A00581CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -848,6 +967,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9290C50A19B3528A00581CB6 /* Debug */,
+				924D0D4C19DE0CB9005E06CD /* GCov_Build */,
 				9290C50B19B3528A00581CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -857,6 +977,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9290C50D19B3528A00581CB6 /* Debug */,
+				924D0D4D19DE0CB9005E06CD /* GCov_Build */,
 				9290C50E19B3528A00581CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
