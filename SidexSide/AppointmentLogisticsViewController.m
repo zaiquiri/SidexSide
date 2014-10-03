@@ -1,6 +1,7 @@
 #import "AppointmentLogisticsViewController.h"
 #import <MapKit/MapKit.h>
 #import "SidexSideAppointment.h"
+#import "WaitingForConfirmationViewController.h"
 
 @interface AppointmentLogisticsViewController()
 
@@ -92,6 +93,11 @@
     span.longitudeDelta = 0.01;
     region.span = span;
     [self.mapView setRegion:region animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    WaitingForConfirmationViewController *destinationViewController = (WaitingForConfirmationViewController *)segue.destinationViewController;
+    
 }
 
 @end
